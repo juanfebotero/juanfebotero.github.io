@@ -1,0 +1,11 @@
+_site/
+__pycache__/
+.ipynb_checkpoints/
+# answer key: keep private
+tools/test_soluciones.py
+# LaTeX build files of the CV
+cv-latex/*.aux
+cv-latex/*.log
+cv-latex/*.out
+# notas internas del proyecto (no se publican)
+docs/

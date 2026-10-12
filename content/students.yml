@@ -1,0 +1,38 @@
+# ------------------------------------------------------------
+# Supervised students. Source: CV 2026 (LaTeX) and CvLAC.
+# status: completed | ongoing
+# ------------------------------------------------------------
+phd:
+  - name: "Paulina Arregocés"
+    years: "2023–"
+    status: ongoing
+  - name: "Josué Genaro Almaraz Rivera"
+    years: "2022–2026"
+    status: completed
+    note: {es: "Codirección con el Tecnológico de Monterrey", en: "Co-supervised with Tecnológico de Monterrey"}
+  - name: "Paola Soto"
+    years: "2020–2025"
+    status: completed
+    note: {es: "Codirección con la University of Antwerp", en: "Co-supervised with the University of Antwerp"}
+  - name: "Jaime Vergara"
+    years: "2019–2025"
+    status: completed
+  - name: "Alexánder Leal"
+    years: "2015–2019"
+    status: completed
+  - name: "Bart Spinnewyn"
+    years: "2015–2019"
+    status: completed
+    note: {es: "Codirección con la University of Antwerp", en: "Co-supervised with the University of Antwerp"}
+  - name: "Juliver Gil Herrera"
+    years: "2014–2018"
+    status: completed
+  - name: "Michael Till Beck"
+    years: "2014–2018"
+    status: completed
+    note: {es: "En cooperación con la Ludwig-Maximilians-Universität München", en: "In cooperation with Ludwig-Maximilians-Universität München"}
+postdoc:
+  - name: "Sergio Armando Gutiérrez"
+    years: "2021–2023"
+    note: {es: "Proyecto de ciberseguridad en infraestructura crítica", en: "Cybersecurity in critical infrastructure project"}
+masters_count: 17

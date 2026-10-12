@@ -1,0 +1,50 @@
+# ------------------------------------------------------------
+# Research lines. "id" links each line to its part of the network drawing
+# on the home page (templates/_topology.html). Keep the five ids.
+# ------------------------------------------------------------
+
+lines:
+  - id: programmable
+    es:
+      title: "Redes programables"
+      text: "Planos de control y de datos programables (SDN y P4) para gestionar, monitorear y proteger la red desde el software, incluida la ingeniería de tráfico con aprendizaje por refuerzo."
+    en:
+      title: "Programmable networks"
+      text: "Programmable control and data planes (SDN and P4) to manage, monitor and protect the network in software, including traffic engineering with reinforcement learning."
+    keywords: ["SDN", "P4", "OpenFlow", "INT"]
+
+  - id: virtualization
+    es:
+      title: "Virtualización y asignación de recursos"
+      text: "Virtual network embedding, composición y ubicación de cadenas de funciones de servicio (NFV) y orquestación en la nube y el borde, formuladas como problemas de optimización."
+    en:
+      title: "Virtualization and resource allocation"
+      text: "Virtual network embedding, service function chain composition and placement (NFV), and cloud and edge orchestration, formulated as optimization problems."
+    keywords: ["VNE", "NFV", "SFC", "MILP"]
+
+  - id: security
+    es:
+      title: "Ciberseguridad en redes"
+      text: "Detección y mitigación de ataques DDoS e intrusiones con aprendizaje automático y autosupervisado, conjuntos de datos abiertos y detección dentro del plano de datos."
+    en:
+      title: "Network cybersecurity"
+      text: "Detection and mitigation of DDoS attacks and intrusions with machine and self-supervised learning, open datasets and in-network detection in the data plane."
+    keywords: ["DDoS", "IDS", "ML"]
+
+  - id: critical
+    es:
+      title: "Redes para infraestructura crítica"
+      text: "Redes de comunicación para subestaciones digitales con IEC 61850, redes eléctricas inteligentes y microrredes: confiabilidad, calidad de servicio y seguridad."
+    en:
+      title: "Networks for critical infrastructure"
+      text: "Communication networks for IEC 61850 digital substations, smart grids and microgrids: reliability, quality of service and security."
+    keywords: ["IEC 61850", "GOOSE", "Smart grid"]
+
+  - id: education
+    es:
+      title: "Educación en ingeniería"
+      text: "Laboratorios remotos para la enseñanza de redes y estrategias de aprendizaje adaptativo apoyadas en analítica del aprendizaje."
+    en:
+      title: "Engineering education"
+      text: "Remote laboratories for networking education and adaptive learning strategies supported by learning analytics."
+    keywords: ["Remote labs"]

@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}{{ t.nav_teaching }} · {{ profile.name }}{% endblock %}
+{% block description %}{{ t.teaching_intro }}{% endblock %}
+{% macro pill(status) %}<span class="pill pill-{{ status }}">{{ t['status_' + status] }}</span>{% endmacro %}
+{% block main %}
+<section class="page-head">
+  <div class="wrap">
+    <h1 class="display display-sm">{{ t.nav_teaching }}</h1>
+    <p class="lede">{{ t.teaching_intro }}</p>
+    <nav class="jump" aria-label="{{ t.nav_teaching }}">
+      {% for b in blocks %}<a href="#{{ b.id }}">{{ b[lang].title }}</a>{% endfor %}
+    </nav>
+  </div>
+</section>
+
+{% for b in blocks %}
+<section class="section block {% if loop.index is even %}section-alt{% endif %}" id="{{ b.id }}">
+  <div class="wrap">
+    <div class="block-head">
+      <h2 class="h2">{{ b[lang].title }}</h2>
+      <p>{{ b[lang].text }}</p>
+    </div>
+    {% set items = courses | selectattr('block', 'equalto', b.id) | list %}
+    {% if b.id == 'especializacion' %}
+    <ul class="spec-list">
+      {% for c in items %}
+      <li><span class="spec-name">{{ c.title[lang] }}</span>{{ pill(c.status) }}</li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <ul class="fichas">
+      {% for c in items %}
+      <li class="ficha" id="{{ c.id }}">
+        <div class="ficha-head">
+          <h3 class="ficha-title">{{ c.title[lang] }}</h3>
+          {{ pill(c.status) }}
+        </div>
+        <dl class="ficha-meta">
+          <div><dt>{{ t.institution }}</dt><dd>{{ 'University of Antwerp' if b.id == 'antwerp' else 'Universidad de Antioquia' }} · {{ c.program[lang] }}</dd></div>
+          <div><dt>{{ t.level }}</dt><dd>{{ t.undergrad if b.id == 'pregrado' else t.masters }}</dd></div>
+          <div><dt>{{ t.language }}</dt><dd>{{ t['lang_' + c.language] }}</dd></div>
+          {% if c.semesters[lang] %}<div><dt>{{ t.editions if b.id == 'antwerp' else t.semesters }}</dt><dd>{{ c.semesters[lang] }}</dd></div>{% endif %}
+        </dl>
+        <p class="ficha-desc">{{ c.description[lang] }}</p>
+        {% if c.syllabus or (c.status == 'active' and c.classroom_url) %}
+        <div class="ficha-actions">
+          {% if c.status == 'active' and c.classroom_url %}
+          <a class="btn btn-primary" href="{{ c.classroom_url }}" rel="noopener">{{ t.join_classroom }}</a>
+          {% if c.classroom_code %}<span class="code-chip">{{ t.class_code }} <span class="mono sel" id="code-{{ c.id }}">{{ c.classroom_code }}</span><button class="copy" type="button" data-copy="code-{{ c.id }}" data-done="{{ t.copied }}">{{ t.copy_btn }}</button></span>{% endif %}
+          {% endif %}
+          {% if c.syllabus %}<a class="btn" href="{{ static(c.syllabus) }}">{{ t.syllabus }}</a>{% endif %}
+        </div>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</section>
+{% endfor %}
+{% endblock %}

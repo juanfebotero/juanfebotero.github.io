@@ -1,0 +1,13 @@
+<li class="pub" id="{{ p.key }}" data-type="{{ p.type }}" data-year="{{ p.year }}" data-topics="{{ p.topics | join(' ') }}">
+  <span class="pub-year mono">{{ p.year }}</span>
+  <div class="pub-body">
+    <p class="pub-title"><a href="{{ p.link }}" rel="noopener">{{ p.title }}</a></p>
+    <p class="pub-authors">{{ p.authors | me }}</p>
+    <p class="pub-venue"><span class="kind">{{ t[p.type] }}</span> <cite>{{ p.venue }}</cite></p>
+    <div class="pub-actions">
+      {% if p.doi %}<a class="pub-act mono" href="https://doi.org/{{ p.doi }}" rel="noopener">{{ t.doi }} {{ p.doi }}</a>{% endif %}
+      <button class="pub-act mono" type="button" data-bib="bib-{{ p.key }}" data-done="{{ t.copied }}">{{ t.copy_bibtex }}</button>
+      <pre class="bib" id="bib-{{ p.key }}" hidden>{{ p.bibtex }}</pre>
+    </div>
+  </div>
+</li>

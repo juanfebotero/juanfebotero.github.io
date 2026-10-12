@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}{{ t.nav_cv }} · {{ profile.name }}{% endblock %}
+{% block description %}{{ t.cv_intro }}{% endblock %}
+{% macro rows(items, key='years') %}
+<ul class="cv-rows">
+  {% for e in items %}<li><span class="cv-year mono">{{ e[key] }}</span><span>{{ e[lang] }}</span></li>{% endfor %}
+</ul>
+{% endmacro %}
+{% block main %}
+<section class="page-head">
+  <div class="wrap">
+    <h1 class="display display-sm">{{ t.nav_cv }}</h1>
+    <p class="lede">{{ t.cv_intro }}</p>
+    <div class="actions"><a class="btn btn-primary" href="{{ static('cv/JuanFelipeBotero-CV.pdf') }}">{{ t.download_cv }}</a></div>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap cv-grid">
+    <div class="cv-block"><h2 class="h2">{{ t.positions }}</h2>{{ rows(profile.positions) }}</div>
+    <div class="cv-block"><h2 class="h2">{{ t.education }}</h2>{{ rows(profile.education, 'year') }}</div>
+    <div class="cv-block"><h2 class="h2">{{ t.recognition }}</h2>{{ rows(profile.recognition, 'year') }}</div>
+    <div class="cv-block">
+      <h2 class="h2">{{ t.service }}</h2>
+      <h3 class="label-h">{{ t.editorial }}</h3>{{ rows(service.editorial) }}
+      <h3 class="label-h">{{ t.chairs }}</h3>{{ rows(service.chairs) }}
+      <h3 class="label-h">{{ t.talks }}</h3>{{ rows(service.talks) }}
+      <h3 class="label-h">{{ t.committees }}</h3><p class="cv-text">{{ service.committees[lang] }}</p>
+    </div>
+    <div class="cv-block"><h2 class="h2">{{ t.languages }}</h2><p class="cv-text">{{ t.languages_text }}</p></div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,132 @@
+# ------------------------------------------------------------
+# Profile: everything about me that appears on the site.
+# Each text has an "es" and an "en" version that must say the same.
+# Sources: MyDigitalTwin/PROFILE/about-me.md (9 Oct 2026), CvLAC (12 Oct 2026),
+#          CV/2026/JuanFelipeBotero-CV.tex (May 2026), Google Scholar PDF (12 Oct 2026).
+# ------------------------------------------------------------
+
+name: "Juan Felipe Botero"
+full_name: "Juan Felipe Botero Vega"
+photo: "static/img/profile.jpg"
+
+position:
+  es: "Profesor titular"
+  en: "Full Professor"
+department:
+  es: "Departamento de Ingeniería Electrónica y de Telecomunicaciones"
+  en: "Department of Electronic and Telecommunications Engineering"
+institution:
+  es: "Facultad de Ingeniería, Universidad de Antioquia · Medellín, Colombia"
+  en: "Faculty of Engineering, Universidad de Antioquia · Medellín, Colombia"
+second_affiliation:
+  es: "Guest Professor, Department of Computer Science, University of Antwerp"
+  en: "Guest Professor, Department of Computer Science, University of Antwerp"
+category:
+  es: "Investigador Senior de Minciencias"
+  en: "Senior Researcher, Minciencias (Colombia)"
+group:
+  name: "GITA"
+  es: "Grupo de Investigación en Telecomunicaciones Aplicadas"
+  en: "Applied Telecommunications Research Group"
+  url: ""   # pendiente: confirmar la dirección del sitio del grupo
+
+tagline:
+  es: "Investigo cómo gestionar redes programables (SDN, NFV y P4) con optimización matemática y aprendizaje automático, para hacer más seguras las redes y la infraestructura crítica."
+  en: "I study how to manage programmable networks (SDN, NFV and P4) with mathematical optimization and machine learning, to make networks and critical infrastructure more secure."
+
+sabbatical:
+  es: "Estoy en año sabático hasta marzo de 2027. Durante este periodo diseño la Especialización en Ciberseguridad de la Universidad de Antioquia, cuya primera cohorte está prevista para 2027."
+  en: "I am on sabbatical leave until March 2027. During this period I am designing the Specialization in Cybersecurity at Universidad de Antioquia, whose first cohort is planned for 2027."
+
+bio:
+  es: |
+    Soy profesor titular del Departamento de Ingeniería Electrónica y de Telecomunicaciones de la Universidad de Antioquia, donde trabajo desde 2013, e investigador del grupo GITA. Desde 2021 soy también Guest Professor de la University of Antwerp, donde dicto el curso de maestría *Future Internet*.
+
+    Soy ingeniero de sistemas de la Universidad de Antioquia (2006) y tengo maestría (2008) y doctorado (2013) en Ingeniería Telemática de la Universitat Politècnica de Catalunya. Mi tesis doctoral, sobre algoritmos para el problema de *virtual network embedding*, recibió la mención *cum laude* y la mención internacional.
+
+    Mi investigación trata sobre la gestión de redes programables con optimización y aprendizaje automático, con aplicaciones en ciberseguridad e infraestructura crítica, como las subestaciones eléctricas digitales y las redes eléctricas inteligentes. He dirigido siete tesis doctorales y he participado en más de quince proyectos financiados, varios de ellos con socios de Europa y América Latina.
+  en: |
+    I am a Full Professor in the Department of Electronic and Telecommunications Engineering at Universidad de Antioquia, where I have worked since 2013, and a researcher in the GITA group. Since 2021 I have also been a Guest Professor at the University of Antwerp, where I teach the master's course *Future Internet*.
+
+    I received a degree in Systems Engineering from Universidad de Antioquia (2006) and an M.Sc. (2008) and a Ph.D. (2013) in Telematics Engineering from the Universitat Politècnica de Catalunya. My doctoral thesis, on algorithms for the virtual network embedding problem, was awarded *cum laude* with international mention.
+
+    My research addresses the management of programmable networks with optimization and machine learning, with applications to cybersecurity and critical infrastructure such as digital power substations and smart grids. I have supervised seven doctoral theses and taken part in more than fifteen funded projects, several of them with partners in Europe and Latin America.
+
+education:
+  - year: 2013
+    es: "Doctorado en Ingeniería Telemática, Universitat Politècnica de Catalunya"
+    en: "Ph.D. in Telematics Engineering, Universitat Politècnica de Catalunya"
+  - year: 2008
+    es: "Maestría en Ingeniería Telemática, Universitat Politècnica de Catalunya"
+    en: "M.Sc. in Telematics Engineering, Universitat Politècnica de Catalunya"
+  - year: 2006
+    es: "Ingeniería de Sistemas, Universidad de Antioquia"
+    en: "B.Eng. in Systems Engineering, Universidad de Antioquia"
+
+positions:
+  - years: "2021–"
+    es: "Guest Professor, Department of Computer Science, University of Antwerp (Bélgica)"
+    en: "Guest Professor, Department of Computer Science, University of Antwerp (Belgium)"
+  - years: "2013–"
+    es: "Profesor de la Universidad de Antioquia (asistente, asociado y, hoy, titular)"
+    en: "Faculty member at Universidad de Antioquia (Assistant, Associate and now Full Professor)"
+  - years: "2024–2025"
+    es: "Coordinador de la Maestría en Ingeniería de Telecomunicaciones"
+    en: "Coordinator of the M.Sc. in Telecommunications Engineering"
+  - years: "2019–2024"
+    es: "Coordinador del Doctorado en Ingeniería Electrónica y de Computación"
+    en: "Coordinator of the Ph.D. in Electronic and Computer Engineering"
+  - years: "2016"
+    es: "Estancia posdoctoral, University of Antwerp: configuración de extremo a extremo de redes virtualizadas y componentes en la nube con garantías de QoS"
+    en: "Postdoctoral stay, University of Antwerp: end-to-end configuration of virtualized network and cloud components with QoS guarantees"
+  - years: "2011–2012"
+    es: "Pasantía doctoral, Chair of Computer Networks, Universität Passau (Alemania)"
+    en: "Doctoral research stay, Chair of Computer Networks, University of Passau (Germany)"
+
+recognition:
+  - year: 2023
+    es: "Best Poster Award, LatinX in AI (LXAI) Workshop en ICCV 2023"
+    en: "Best Poster Award, LatinX in AI (LXAI) Workshop at ICCV 2023"
+  - year: 2021
+    es: "Best Paper Award, IEEE SDS 2021"
+    en: "Best Paper Award, IEEE SDS 2021"
+  - year: 2018
+    es: "Distinción Sobresaliente y Distinción Meritoria, Universidad de Antioquia"
+    en: "Outstanding and Meritorious Distinctions, Universidad de Antioquia"
+  - year: 2015
+    es: "Best Paper Award, ICSNC 2015 (IARIA), por «A novel path computing framework under QoX constraints based on N&PV functions embedding»"
+    en: "Best Paper Award, ICSNC 2015 (IARIA), for “A novel path computing framework under QoX constraints based on N&PV functions embedding”"
+  - year: 2013
+    es: "Tesis doctoral con mención cum laude y mención internacional, Universitat Politècnica de Catalunya"
+    en: "Ph.D. thesis awarded cum laude with international mention, Universitat Politècnica de Catalunya"
+  - year: 2007
+    es: "Mención especial al trabajo de grado, Universidad de Antioquia"
+    en: "Special mention for the undergraduate thesis, Universidad de Antioquia"
+
+# Citation metrics, copied from the Google Scholar profile.
+metrics:
+  source_url: "https://scholar.google.com/citations?user=Ljd3pb0AAAAJ"
+  as_of: "2026-10-12"
+  citations: 5751
+  h_index: 29
+  i10_index: 55
+  phd_supervised: 7
+
+contact:
+  email: "juanf.botero@udea.edu.co"
+  postal:
+    es: "Facultad de Ingeniería, Universidad de Antioquia · Calle 67 # 53-108, Medellín, Colombia"
+    en: "Faculty of Engineering, Universidad de Antioquia · Calle 67 # 53-108, Medellín, Colombia"
+  note:
+    es: "Escríbame por correo para reuniones con estudiantes, colaboraciones o invitaciones."
+    en: "Please write by email for student meetings, collaborations or invitations."
+
+links:
+  - label: "Google Scholar"
+    url: "https://scholar.google.com/citations?user=Ljd3pb0AAAAJ"
+  - label: "ORCID"
+    url: "https://orcid.org/0000-0002-7072-8924"
+  - label: "CvLAC"
+    url: "https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001509008"
+  - label: "GitHub"
+    url: "https://github.com/juanfebotero"

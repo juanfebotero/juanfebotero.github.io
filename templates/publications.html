@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}{{ t.nav_publications }} · {{ profile.name }}{% endblock %}
+{% block description %}{{ t.pubs_intro }} Google Scholar.{% endblock %}
+{% block main %}
+<section class="page-head">
+  <div class="wrap">
+    <h1 class="display display-sm">{{ t.nav_publications }}</h1>
+    <p class="lede">{{ t.pubs_intro }} <a href="{{ profile.metrics.source_url }}" rel="noopener">Google Scholar</a>.</p>
+    <p class="counts mono">{{ counts.journal }} {{ t.journals|lower }} · {{ counts.conference }} {{ t.conferences|lower }} · {{ counts.other }} {{ t.others|lower }}</p>
+  </div>
+</section>
+<section class="section section-tight">
+  <div class="wrap">
+    <form class="filters" id="pub-filters" role="search" onsubmit="return false">
+      <div class="field field-wide">
+        <label for="pub-q">{{ t.search_pubs }}</label>
+        <input id="pub-q" type="search" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="pub-type">{{ t.type }}</label>
+        <select id="pub-type">
+          <option value="all">{{ t.all_types }}</option>
+          <option value="journal">{{ t.journals }}</option>
+          <option value="conference">{{ t.conferences }}</option>
+          <option value="other">{{ t.others }}</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="pub-topic">{{ t.topic }}</label>
+        <select id="pub-topic">
+          <option value="all">{{ t.all_topics }}</option>
+          {% for tp in topics %}<option value="{{ tp }}">{{ t['topic_' + tp] }}</option>{% endfor %}
+        </select>
+      </div>
+      <div class="field">
+        <label for="pub-year">{{ t.year }}</label>
+        <select id="pub-year">
+          <option value="all">{{ t.all_years }}</option>
+          {% for y in years %}<option value="{{ y }}">{{ y }}</option>{% endfor %}
+        </select>
+      </div>
+    </form>
+    <p class="result-count mono" id="pub-count" data-label="{{ t.results }}" aria-live="polite">{{ pubs|length }} {{ t.results }}</p>
+    {% for y in years %}
+    <section class="year-group" data-year="{{ y }}">
+      <h2 class="year-h">{{ y }}</h2>
+      <ol class="pubs">
+        {% for p in pubs if p.year == y %}{% include "_pub.html" %}{% endfor %}
+      </ol>
+    </section>
+    {% endfor %}
+    <p class="empty" id="pub-empty" hidden>{{ t.no_results }}</p>
+  </div>
+</section>
+{% endblock %}

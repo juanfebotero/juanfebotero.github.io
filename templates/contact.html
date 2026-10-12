@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}{{ t.nav_contact }} · {{ profile.name }}{% endblock %}
+{% block description %}{{ t.contact_intro }}{% endblock %}
+{% block main %}
+<section class="page-head">
+  <div class="wrap">
+    <h1 class="display display-sm">{{ t.nav_contact }}</h1>
+    <p class="lede">{{ t.contact_intro }}</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap news-grid">
+    <h2 class="h2">{{ t.email }}</h2>
+    <dl class="contact">
+      <div><dt>{{ t.email }}</dt><dd><span class="mono sel" id="email-c">{{ profile.contact.email }}</span> <button class="copy" type="button" data-copy="email-c" data-done="{{ t.copied }}">{{ t.copy_btn }}</button></dd></div>
+      <div><dt>{{ t.postal }}</dt><dd>{{ profile.contact.postal[lang] }}</dd></div>
+      <div class="contact-note"><dd>{{ profile.contact.note[lang] }}{% if profile.sabbatical %} {{ profile.sabbatical[lang] }}{% endif %}</dd></div>
+    </dl>
+  </div>
+</section>
+<section class="section section-alt">
+  <div class="wrap news-grid">
+    <h2 class="h2">{{ t.profiles }}</h2>
+    <ul class="profile-links">
+      {% for l in profile.links %}<li><a href="{{ l.url }}" rel="noopener">{{ l.label }}</a></li>{% endfor %}
+    </ul>
+  </div>
+</section>
+{% endblock %}

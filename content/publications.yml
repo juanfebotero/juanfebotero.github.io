@@ -1,0 +1,970 @@
+# ------------------------------------------------------------
+# Publications (curated from Google Scholar, Sept 2026; verified against DBLP on 12 Oct 2026 (field 'verified': dblp | crossref | scholar)).
+# type: journal | conference | other
+# featured: true  -> also shown under "Selected publications" on the home page
+# doi or url are optional; without them the title links to a Google Scholar search.
+# To add a paper, copy a block and edit it. Order does not matter (sorted by year).
+# ------------------------------------------------------------
+# topics: security | virtualization | programmable | critical | education | other (used by the topic filter)
+
+- year: 2026
+  title: 'A Survey on Self-Supervised Learning in Cybersecurity: Network Intrusion and Malware Detection'
+  authors: J. G. Almaraz-Rivera, J. A. Cantoral-Ceballos, J. F. Botero
+  venue: Machine Learning and Knowledge Extraction 8(5), 121
+  type: journal
+  doi: 10.3390/MAKE8050121
+  verified: dblp
+  topics:
+  - security
+- year: 2026
+  title: Extending Memory-Based Obfuscated Malware Detection With Network Behavior
+  authors: J. F. Mercado, J. G. Almaraz-Rivera, S. A. Gutiérrez, J. A. Pérez-Díaz, et al.
+  venue: IEEE Open Journal of the Communications Society
+  type: journal
+  doi: 10.1109/OJCOMS.2026.3667851
+  verified: dblp
+  topics:
+  - security
+- year: 2026
+  title: 'Data-driven load forecasting in microgrids: integrating external factors for efficient control and decision-making'
+  authors: K. D. Martínez-Zapata, D. Ospina-Acero, J. J. Granada-Torres, et al.
+  venue: Energies 19(2), 555
+  type: journal
+  verified: scholar
+  topics:
+  - critical
+- year: 2026
+  title: 'Challenges and Scope in the Adoption of Emerging Technologies in Agriculture: A Systematic Review'
+  authors: M. Ortega-Monsalve, M. Medina-Sierra, H. Rodríguez-Espinosa, et al.
+  venue: IntechOpen
+  type: other
+  verified: scholar
+  topics:
+  - other
+- year: 2026
+  title: 'Leveraging Reinforcement Learning for Traffic Engineering in Programmable Networks: A Survey'
+  authors: S. Ríos-Guiral, A. Lahmadi, J. F. Botero, S. A. Gutiérrez
+  venue: IEEE Communications Surveys & Tutorials 28, 1318-1350
+  type: journal
+  featured: true
+  doi: 10.1109/COMST.2025.3632870
+  verified: dblp
+  topics:
+  - programmable
+- year: 2025
+  title: 'Cybersecurity Via Programmable Networks: Are We There Yet?'
+  authors: S. A. Gutiérrez, J. F. Botero, L. Fletscher, L. P. Gaspary, N. Gaviria, E. Jacob, et al.
+  venue: Journal of Network and Systems Management 33(4), 95
+  type: journal
+  featured: true
+  doi: 10.1007/S10922-025-09970-9
+  verified: dblp
+  topics:
+  - security
+  - programmable
+- year: 2025
+  title: 'Hyphatia: A card-not-present fraud detection system based on self-supervised tabular learning'
+  authors: J. G. Almaraz-Rivera, J. A. Cantoral-Ceballos, J. F. Botero, F. J. Muñoz, et al.
+  venue: IEEE Open Journal of the Computer Society 6, 812-821
+  type: journal
+  doi: 10.1109/OJCS.2025.3570600
+  verified: dblp
+  topics:
+  - security
+- year: 2025
+  title: A Multimodal Learning Approach for Protecting the Metro System of Medellin Colombia Against Corrupted User Traffic Data
+  authors: J. G. Almaraz-Rivera, J. A. Cantoral-Ceballos, J. F. Botero, F. J. Muñoz, et al.
+  venue: Smart Cities 8(6), 198
+  type: journal
+  verified: scholar
+  topics:
+  - other
+- year: 2025
+  title: Diseño de una estrategia de coproducción sostenible e inteligente para procesos de formación a lo largo de la vida centrados en la sociedad y las empresas
+  authors: L. Fletscher, N. Gaviria, J. F. Botero, S. Gutiérrez
+  venue: Encuentro Internacional de Educación en Ingeniería (EIEI ACOFI)
+  type: conference
+  verified: scholar
+  topics:
+  - education
+- year: 2024
+  title: 'GOOSE secure: A comprehensive dataset for in-depth analysis of GOOSE spoofing attacks in digital substations'
+  authors: O. A. Tobar-Rosero, O. A. Roa-Romero, G. D. Rueda-Carvajal, et al.
+  venue: Energies 17(23), 6098
+  type: journal
+  verified: scholar
+  topics:
+  - security
+  - critical
+- year: 2024
+  title: 'Exploring traffic patterns through network programmability: introducing SDNFlow, a comprehensive OpenFlow-based statistics dataset for attack detection'
+  authors: J. Buzzio-García, J. Vergara, S. Ríos-Guiral, C. Garzón, S. Gutiérrez, et al.
+  venue: IEEE Access 12, 42163-42180
+  type: journal
+  doi: 10.1109/ACCESS.2024.3378271
+  verified: dblp
+  topics:
+  - security
+  - programmable
+- year: 2024
+  title: Resource-efficient spectrum-based traffic classification on constrained devices
+  authors: D. Góez, E. A. Beyazit, L. A. Fletscher, J. F. Botero, N. Gaviria, S. Latré, et al.
+  venue: IEEE Open Journal of the Communications Society 5, 3066-3088
+  type: journal
+  doi: 10.1109/OJCOMS.2024.3396077
+  verified: dblp
+  topics:
+  - other
+- year: 2024
+  title: A techno-economic analysis of new market models for 5G+ spectrum management
+  authors: L. A. Fletscher, A. Zuleta, A. Galvis, D. Quintero, J. F. Botero, N. Gaviria
+  venue: Information 15(4), 197
+  type: journal
+  doi: 10.3390/INFO15040197
+  verified: dblp
+  topics:
+  - other
+- year: 2024
+  title: In-band ARP-based man-in-the-middle attack detection using P4 programmable switches
+  authors: C. Garzón, A. Lahmadi, J. Vergara, A. Leal, J. F. Botero
+  venue: IEEE Latin-American Conference on Communications (LATINCOM)
+  type: conference
+  doi: 10.1109/LATINCOM62985.2024.10770688
+  verified: dblp
+  topics:
+  - security
+  - programmable
+- year: 2024
+  title: Network Traffic Analysis Through Flows and Packets with Machine Learning
+  authors: C. López, S. Ríos-Guiral, J. Vergara, J. F. Botero, S. A. Gutiérrez
+  venue: IEEE ANDESCON
+  type: conference
+  verified: scholar
+  topics:
+  - other
+- year: 2024
+  title: 'GooseFlowMeter: A Flow Extractor for the Analysis of GOOSE Messages'
+  authors: S. Ríos-Guiral, J. F. Botero, S. A. Gutiérrez-Betancur, P. Arregocés
+  venue: International Congress on Information and Communication Technology (ICICT), 241-254
+  type: conference
+  verified: scholar
+  topics:
+  - critical
+- year: 2024
+  title: Predicting Student Performance in a Non-linear Self-Paced Moodle Course
+  authors: J. F. Mercado, C. Mendoza-Cárdenas, N. Gaviria-Gómez, L. Fletscher, et al.
+  venue: LACCEI
+  type: conference
+  verified: scholar
+  topics:
+  - education
+- year: 2024
+  title: Designing, developing, and validating network intelligence for scaling in service-based architectures based on deep reinforcement learning
+  authors: P. Soto, M. Camelo, D. De Vleeschauwer, Y. De Bock, et al.
+  venue: arXiv:2405.04441
+  type: other
+  url: https://arxiv.org/abs/2405.04441
+  verified: dblp
+  topics:
+  - other
+- year: 2024
+  title: 'P4 cybersecurity solutions: Taxonomy and open challenges'
+  authors: C. Garzón, S. Ríos-Guiral, E. Leal, S. A. Gutiérrez, J. F. Botero
+  venue: IEEE Access 12, 6376-6399
+  type: journal
+  doi: 10.1109/ACCESS.2023.3347332
+  verified: dblp
+  topics:
+  - security
+  - programmable
+- year: 2023
+  title: 'Enhancing IoT network security: Unveiling the power of self-supervised learning against DDoS attacks'
+  authors: J. G. Almaraz-Rivera, J. A. Cantoral-Ceballos, J. F. Botero
+  venue: Sensors 23(21), 8701
+  type: journal
+  doi: 10.3390/S23218701
+  verified: dblp
+  topics:
+  - security
+  - critical
+- year: 2023
+  title: 'Next-generation power substation communication networks: IEC 61850 meets programmable networks'
+  authors: S. A. Gutiérrez, J. F. Botero, N. G. Gómez, L. A. Fletscher, A. Leal
+  venue: IEEE Power and Energy Magazine 21(5), 58-67
+  type: journal
+  doi: 10.1109/MPE.2023.3288579
+  verified: scholar
+  topics:
+  - programmable
+  - critical
+- year: 2023
+  title: Opportunistic CPU sharing in mobile edge computing deploying the Cloud-RAN
+  authors: A. F. Ocampo, M. R. Fida, J. F. Botero, A. Elmokashfi, H. Bryhni
+  venue: IEEE Transactions on Network and Service Management 20(3), 2201-2217
+  type: journal
+  doi: 10.1109/TNSM.2023.3304067
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2023
+  title: Network intelligence for NFV scaling in closed-loop architectures
+  authors: P. Soto, M. Camelo, D. De Vleeschauwer, Y. De Bock, C. Y. Chang, J. F. Botero, S. Latré
+  venue: IEEE Communications Magazine 61(6), 66-72
+  type: journal
+  doi: 10.1109/MCOM.001.2200529
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2023
+  title: A comprehensive survey on resource allocation strategies in fog/cloud environments
+  authors: J. Vergara, J. F. Botero, L. Fletscher
+  venue: Sensors 23(9), 4413
+  type: journal
+  doi: 10.3390/s23094413
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2023
+  title: An Adaptable and Agnostic Flow Scheduling Approach for Data Center Networks
+  authors: S. A. Gutiérrez, J. F. Botero, J. W. Branch-Bedoya
+  venue: Journal of Network and Systems Management 31(1), 12
+  type: journal
+  doi: 10.1007/s10922-022-09701-4
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2023
+  title: 'PRINCIPIA: Opportunistic CPU and CPU-shares allocation for containerized virtualization in mobile edge computing'
+  authors: A. F. Ocampo, M. R. Fida, J. F. Botero, A. Elmokashfi, H. Bryhni
+  venue: IEEE/IFIP Network Operations and Management Symposium (NOMS)
+  type: conference
+  doi: 10.1109/NOMS56928.2023.10154371
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2023
+  title: 'GOOSEAttacker: Synthetic Attack Generation Tool for IEC 61850'
+  authors: O. Roa, J. F. Botero, S. A. Gutiérrez-Betancur, O. A. Tobar-Rosero
+  venue: IEEE Latin-American Conference on Communications (LATINCOM)
+  type: conference
+  doi: 10.1109/LATINCOM59467.2023.10361897
+  verified: dblp
+  topics:
+  - security
+  - critical
+- year: 2023
+  title: A hybrid strategy for DoS attacks detection and mitigation on SDN enabled real scenarios
+  authors: J. Vergara, C. Garzón, J. F. Botero
+  venue: International Congress on Information and Communication Technology (ICICT), 705-714
+  type: conference
+  verified: scholar
+  topics:
+  - security
+  - programmable
+- year: 2023
+  title: Smart Substation Communication with Virtual Networks
+  authors: W. A. Vásquez-Barrientos, D. Escobar-Grisales, J. F. Botero-Vega
+  venue: Workshop on Engineering Applications (WEA), 399-410
+  type: conference
+  verified: scholar
+  topics:
+  - virtualization
+  - critical
+- year: 2023
+  title: 'Work in progress: A didactic strategy based on Machine Learning for adaptive learning in virtual environments'
+  authors: J. Mercado, C. H. Mendoza, D. A. Ramírez-Salazar, A. Valderrama, N. Gaviria-Gómez, J. F. Botero, L. Fletscher
+  venue: IEEE World Engineering Education Conference (EDUNINE)
+  type: conference
+  doi: 10.1109/EDUNINE57531.2023.10102846
+  verified: scholar
+  topics:
+  - virtualization
+  - education
+- year: 2023
+  title: Subestaciones digitales y ciberseguridad como factores claves en la transformación digital del sector eléctrico colombiano
+  authors: Ó. Tobar Rosero, E. P. González, J. F. Botero Vega, G. Z. Madrigal
+  venue: Encuentro Internacional de Educación en Ingeniería (EIEI ACOFI)
+  type: conference
+  verified: scholar
+  topics:
+  - education
+- year: 2022
+  title: 'Toward the protection of IoT networks: Introducing the LATAM-DDoS-IoT dataset'
+  authors: J. G. Almaraz-Rivera, J. A. Pérez-Díaz, J. A. Cantoral-Ceballos, J. F. Botero, L. Trejo
+  venue: IEEE Access 10, 106909-106920
+  type: journal
+  doi: 10.1109/ACCESS.2022.3211513
+  verified: dblp
+  topics:
+  - security
+- year: 2022
+  title: 'Network-based intrusion detection: A one-class classification approach'
+  authors: P. Arregocés, J. Vergara, S. A. Gutiérrez, J. F. Botero
+  venue: IEEE/IFIP Network Operations and Management Symposium (NOMS)
+  type: conference
+  doi: 10.1109/NOMS54207.2022.9789927
+  verified: dblp
+  topics:
+  - security
+- year: 2022
+  title: LATAM-DDoS-IoT dataset
+  authors: J. G. Almaraz-Rivera, J. A. Pérez-Díaz, J. A. Cantoral-Ceballos, J. F. Botero, L. Trejo
+  venue: IEEE DataPort
+  type: other
+  doi: 10.21227/RWTJ-DD43
+  verified: dblp
+  topics:
+  - security
+- year: 2021
+  title: 'Emerging DDoS attack detection and mitigation strategies in software-defined networks: Taxonomy, challenges and future directions'
+  authors: I. A. Valdovinos, J. A. Pérez-Díaz, K. K. R. Choo, J. F. Botero
+  venue: Journal of Network and Computer Applications 187, 103093
+  type: journal
+  doi: 10.1016/j.jnca.2021.103093
+  featured: true
+  verified: dblp
+  topics:
+  - security
+  - programmable
+- year: 2021
+  title: 'ATARI: A graph convolutional neural network approach for performance prediction in next-generation WLANs'
+  authors: P. Soto, M. Camelo, K. Mets, F. Wilhelmi, D. Góez, L. A. Fletscher, N. Gaviria, P. Hellinckx, J. F. Botero, S. Latré
+  venue: Sensors 21(13), 4321
+  type: journal
+  doi: 10.3390/s21134321
+  verified: dblp
+  topics:
+  - other
+- year: 2021
+  title: An architecture for power substations communication networks based on SDN and virtualization paradigms
+  authors: A. Leal, J. F. Botero
+  venue: Revista Facultad de Ingeniería Universidad de Antioquia, 48-66
+  type: journal
+  url: https://zenodo.org/records/5063036
+  verified: scholar
+  topics:
+  - virtualization
+  - programmable
+  - critical
+- year: 2021
+  title: Tabu search for service function chain composition in NFV
+  authors: J. Gil Herrera, J. F. Botero
+  venue: IEEE Latin America Transactions 19(1), 17-25
+  type: journal
+  doi: 10.1109/TLA.2021.9423822
+  verified: scholar
+  topics:
+  - virtualization
+- year: 2021
+  title: 'ORACLE: An architecture for collaboration of data and control planes to detect DDoS attacks'
+  authors: S. Gómez Macías, L. P. Gaspary, J. F. Botero
+  venue: IFIP/IEEE International Symposium on Integrated Network Management (IM)
+  type: conference
+  doi: 10.1109/IM.2021.9464129
+  verified: dblp
+  topics:
+  - security
+- year: 2021
+  title: 'Detection of DoS/DDoS attacks: the UBM and GMM approach'
+  authors: J. S. M. Osorio, J. A. V. Tejada, J. F. Botero Vega
+  venue: IFIP/IEEE International Symposium on Integrated Network Management (IM)
+  type: conference
+  verified: dblp
+  topics:
+  - security
+- year: 2021
+  title: Towards autonomous VNF auto-scaling using deep reinforcement learning
+  authors: P. Soto, D. De Vleeschauwer, M. Camelo, Y. De Bock, K. De Schepper, C. Y. Chang, P. Hellinckx, J. F. Botero, S. Latré
+  venue: International Conference on Software Defined Systems (SDS)
+  type: conference
+  doi: 10.1109/SDS54264.2021.9731854
+  verified: dblp
+  topics:
+  - programmable
+- year: 2021
+  title: 'Watching smartly from the bottom: Intrusion detection revamped through programmable networks and artificial intelligence'
+  authors: S. A. Gutiérrez, J. W. Branch, L. P. Gaspary, J. F. Botero
+  venue: arXiv:2106.00239
+  type: other
+  url: https://arxiv.org/abs/2106.00239
+  verified: dblp
+  topics:
+  - security
+  - programmable
+- year: 2021
+  title: Automatic Classification of Energy Consumption Profiles in Processes of the Oil & Gas Industry in Colombia
+  authors: B. Escobar-Restrepo, J. F. Botero Vega, J. R. Orozco-Arroyave
+  venue: Workshop on Engineering Applications (WEA), 49-59
+  type: conference
+  doi: 10.1007/978-3-030-86702-7_5
+  verified: dblp
+  topics:
+  - critical
+- year: 2020
+  title: 'Security in SDN: A comprehensive survey'
+  authors: J. C. Correa Chica, J. C. Imbachi, J. F. Botero Vega
+  venue: Journal of Network and Computer Applications 159, 102595
+  type: journal
+  doi: 10.1016/J.JNCA.2020.102595
+  verified: dblp
+  topics:
+  - security
+  - programmable
+- year: 2020
+  title: Reliability provision in software defined power substations communication networks
+  authors: A. Leal, M. Durán, J. F. Botero
+  venue: Computer Networks 181, 107560
+  type: journal
+  doi: 10.1016/j.comnet.2020.107560
+  verified: dblp
+  topics:
+  - programmable
+  - critical
+- year: 2020
+  title: Delay-constrained NFV orchestration for heterogeneous cloud networks
+  authors: B. Spinnewyn, S. Latré, J. F. Botero
+  venue: Computer Networks 180, 107420
+  type: journal
+  doi: 10.1016/j.comnet.2020.107420
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2020
+  title: 'Service Orchestration in NFV-Based Traditional and Emerging Cloud Environments: State of the Art and Research Challenges'
+  authors: B. Spinnewyn, S. Latré, J. F. Botero
+  venue: IEEE Communications Magazine 58(8), 76-81
+  type: journal
+  doi: 10.1109/MCOM.001.1900759
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2020
+  title: 'Augmented Wi-Fi: An AI-based Wi-Fi management framework for Wi-Fi/LTE coexistence'
+  authors: P. Soto, M. Camelo, J. Fontaine, M. Girmay, A. Shahid, V. Maglogiannis, E. De Poorter, I. Moerman, J. F. Botero, S. Latré
+  venue: International Conference on Network and Service Management (CNSM)
+  type: conference
+  doi: 10.23919/CNSM50824.2020.9269064
+  verified: dblp
+  topics:
+  - other
+- year: 2020
+  title: 'RECoNE: A remote environment for computer networks education'
+  authors: L. Fletscher, J. F. Botero, N. Gaviria, É. F. Aza, J. Vergara
+  venue: IEEE Global Engineering Education Conference (EDUCON)
+  type: conference
+  doi: 10.1109/EDUCON45650.2020.9125383
+  verified: dblp
+  topics:
+  - education
+- year: 2020
+  title: Remote experimentation environment for next-generation computer networks
+  authors: L. Fletscher, J. F. Botero, N. Gaviria, É. F. Aza, J. Vergara
+  venue: IEEE Colombian Conference on Communications and Computing (COLCOM)
+  type: conference
+  doi: 10.1109/COLCOM50121.2020.9219765
+  verified: scholar
+  topics:
+  - other
+- year: 2020
+  title: 'ORACLE: Collaboration of data and control planes to detect DDoS attacks'
+  authors: S. Gómez Macías, L. P. Gaspary, J. F. Botero
+  venue: arXiv:2009.10798
+  type: other
+  url: https://arxiv.org/abs/2009.10798
+  verified: dblp
+  topics:
+  - security
+- year: 2019
+  title: Resource allocation over EON-based infrastructures in a network virtualization environment
+  authors: P. Soto, P. Maya, J. F. Botero
+  venue: IEEE Transactions on Network and Service Management 16(1), 13-26
+  type: journal
+  doi: 10.1109/TNSM.2018.2883488
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2019
+  title: Defining a reliable network topology in software-defined power substations
+  authors: A. Leal, J. F. Botero
+  venue: IEEE Access 7, 14323-14339
+  type: journal
+  doi: 10.1109/ACCESS.2019.2893114
+  verified: dblp
+  topics:
+  - programmable
+  - critical
+- year: 2019
+  title: Effective NFV orchestration for wide-ranging services across heterogeneous cloud networks
+  authors: B. Spinnewyn, J. F. Botero, C. Donato, S. Latré
+  venue: IFIP/IEEE Symposium on Integrated Network and Service Management (IM)
+  type: conference
+  doi: 10.1109/IM.2019.8717923
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2019
+  title: Performance evaluation of the ONOS controller under a DDoS attack
+  authors: S. Gómez Macías, J. F. Botero
+  venue: Latin American Network Operations and Management Symposium (LANOMS)
+  type: conference
+  verified: dblp
+  topics:
+  - security
+  - programmable
+- year: 2018
+  title: Coordinated service composition and embedding of 5G location-constrained network functions
+  authors: B. Spinnewyn, P. H. Isolani, C. Donato, J. F. Botero, S. Latré
+  venue: IEEE Transactions on Network and Service Management 15(4), 1488-1502
+  type: journal
+  doi: 10.1109/TNSM.2018.2876794
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2018
+  title: Desarrollo de aplicativo prototipo en QT para apoyo a la hospitalización domiciliaria en dispositivos móviles Android
+  authors: J. A. Ríos-Palacio, J. F. Botero-Vega
+  venue: Revista Ingeniería Biomédica 12(24), 13-22
+  type: journal
+  verified: scholar
+  topics:
+  - other
+- year: 2018
+  title: QoS proposal for IEC 61850 traffic under an SDN environment
+  authors: A. Leal, J. F. Botero, E. Jacob
+  venue: IEEE Latin-American Conference on Communications (LATINCOM)
+  type: conference
+  doi: 10.1109/LATINCOM.2018.8613240
+  verified: dblp
+  topics:
+  - programmable
+  - critical
+- year: 2018
+  title: Improving early attack detection in networks with sFlow and SDN
+  authors: A. Leal, J. F. Botero, E. Jacob
+  venue: Workshop on Engineering Applications (WEA), 323-335
+  type: conference
+  doi: 10.1007/978-3-030-00353-1_29
+  verified: dblp
+  topics:
+  - security
+  - programmable
+- year: 2018
+  title: Seamless handoff management in IEEE 802.11 networks using SDN
+  authors: S. Martínez, N. Cardona, J. F. Botero
+  venue: IEEE Colombian Conference on Communications and Computing (COLCOM)
+  type: conference
+  doi: 10.1109/COLCOMCON.2018.8466702
+  verified: scholar
+  topics:
+  - programmable
+- year: 2018
+  title: Admission control implementation for QoS performance evaluation over SDWN
+  authors: Á. Jiménez, J. F. Botero, J. P. Urrea
+  venue: IEEE Colombian Conference on Communications and Computing (COLCOM)
+  type: conference
+  doi: 10.1109/COLCOMCON.2018.8466339
+  verified: scholar
+  topics:
+  - other
+- year: 2017
+  title: Scalable and coordinated allocation of service function chains
+  authors: M. T. Beck, J. F. Botero
+  venue: Computer Communications 102, 78-88
+  type: journal
+  doi: 10.1016/j.comcom.2016.09.010
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2017
+  title: Resilient application placement for geo-distributed cloud networks
+  authors: B. Spinnewyn, R. Mennes, J. F. Botero, S. Latré
+  venue: Journal of Network and Computer Applications 85, 14-31
+  type: journal
+  doi: 10.1016/j.jnca.2016.12.015
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2017
+  title: 'Energy consumption and quality of service in WBAN: A performance evaluation between cross-layer and IEEE 802.15.4'
+  authors: J. C. Correa-Chica, J. F. Botero-Vega, N. Gaviria-Gómez
+  venue: DYNA 84(202), 120-128
+  type: journal
+  verified: scholar
+  topics:
+  - critical
+- year: 2017
+  title: Optimal service function chain composition in network functions virtualization
+  authors: A. F. Ocampo, J. Gil-Herrera, P. H. Isolani, M. C. Neves, J. F. Botero, S. Latré, L. Zambenedetti, M. Barcellos, L. Gaspary
+  venue: IFIP International Conference on Autonomous Infrastructure, Management and Security (AIMS)
+  type: conference
+  doi: 10.1007/978-3-319-60774-0_5
+  verified: dblp
+  topics:
+  - security
+  - virtualization
+- year: 2017
+  title: A scalable metaheuristic for service function chain composition
+  authors: J. Gil-Herrera, J. F. Botero
+  venue: IEEE Latin-American Conference on Communications (LATINCOM)
+  type: conference
+  doi: 10.1109/LATINCOM.2017.8240194
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2017
+  title: Cost-effective replica management in fault-tolerant cloud environments
+  authors: B. Spinnewyn, J. F. Botero, S. Latré
+  venue: International Conference on Network and Service Management (CNSM)
+  type: conference
+  doi: 10.23919/CNSM.2017.8256019
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2017
+  title: Optimal occupancy mapping of virtual networks over elastic optical infrastructures
+  authors: P. Soto, J. F. Botero, X. Hesselbach
+  venue: International Conference on Transparent Optical Networks (ICTON)
+  type: conference
+  doi: 10.1109/ICTON.2017.8025069
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2017
+  title: Greedy randomized path-ranking virtual optical network embedding onto EON-based substrate networks
+  authors: P. Soto, J. F. Botero
+  venue: IEEE Colombian Conference on Communications and Computing (COLCOM)
+  type: conference
+  doi: 10.1109/COLCOMCON.2017.8088197
+  verified: scholar
+  topics:
+  - virtualization
+- year: 2017
+  title: Improving fault tolerance in critical networks through OpenFlow
+  authors: C. M. Durán, E. A. Leal, J. F. Botero
+  venue: IEEE Colombian Conference on Communications and Computing (COLCOM)
+  type: conference
+  doi: 10.1109/COLCOMCON.2017.8088195
+  verified: scholar
+  topics:
+  - programmable
+- year: 2017
+  title: Handoff management for smart access points in IEEE 802.11 networks
+  authors: N. Cardona, J. F. Botero, D. Ospina
+  venue: IEEE Colombian Conference on Communications and Computing (COLCOM)
+  type: conference
+  doi: 10.1109/COLCOMCON.2017.8088204
+  verified: scholar
+  topics:
+  - other
+- year: 2016
+  title: 'Resource Allocation in NFV: A Comprehensive Survey'
+  authors: J. Gil Herrera, J. F. Botero
+  venue: IEEE Transactions on Network and Service Management 13(3), 518-532
+  type: journal
+  doi: 10.1109/TNSM.2016.2598420
+  featured: true
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2018
+  title: 'Making data centers fit for demand response: Introducing GreenSDA and GreenSLA contracts'
+  authors: R. Basmadjian, J. F. Botero, G. Giuliani, X. Hesselbach, S. Klingert, H. de Meer
+  venue: IEEE Transactions on Smart Grid 9(4), 3453-3464
+  type: journal
+  doi: 10.1109/TSG.2016.2632526
+  verified: dblp
+  topics:
+  - virtualization
+  - critical
+- year: 2016
+  title: Coordinated node and link mapping VNE using a new paths algebra strategy
+  authors: X. Hesselbach, J. R. Amazonas, S. Villanueva, J. F. Botero
+  venue: Journal of Network and Computer Applications 69, 14-26
+  type: journal
+  doi: 10.1016/j.jnca.2016.02.025
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2016
+  title: 'Network functions virtualization: A survey'
+  authors: J. Gil Herrera, J. F. Botero
+  venue: IEEE Latin America Transactions 14(2), 983-997
+  type: journal
+  verified: scholar
+  topics:
+  - virtualization
+- year: 2016
+  title: Transforming communication networks in power substations through SDN
+  authors: E. A. Leal, J. F. Botero
+  venue: IEEE Latin America Transactions 14(10), 4409-4415
+  type: journal
+  verified: scholar
+  topics:
+  - programmable
+  - critical
+- year: 2016
+  title: 'Cross-layer designs for energy efficient wireless body area networks: a review'
+  authors: J. C. Correa-Chica, J. F. Botero-Vega, N. Gaviria-Gómez
+  venue: Revista Facultad de Ingeniería Universidad de Antioquia, 98-117
+  type: journal
+  verified: scholar
+  topics:
+  - critical
+- year: 2016
+  title: Design of high throughput and cost-efficient data center networks
+  authors: V. Eramo, X. Hesselbach-Serra, Y. Luo, J. F. Botero
+  venue: Journal of Electrical and Computer Engineering 2016
+  type: journal
+  doi: 10.1155/2016/4695185
+  verified: dblp
+  topics:
+  - virtualization
+  - critical
+- year: 2016
+  title: Resilient allocation of service function chains
+  authors: M. T. Beck, J. F. Botero, K. Samelin
+  venue: IEEE Conference on Network Function Virtualization and Software Defined Networks (NFV-SDN)
+  type: conference
+  doi: 10.1109/NFV-SDN.2016.7919487
+  verified: dblp
+  topics:
+  - virtualization
+  - programmable
+- year: 2016
+  title: 'GRECO: A distributed genetic algorithm for reliable application placement in hybrid clouds'
+  authors: R. Mennes, B. Spinnewyn, S. Latré, J. F. Botero
+  venue: IEEE International Conference on Cloud Networking (CloudNet)
+  type: conference
+  doi: 10.1109/CloudNet.2016.45
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2016
+  title: 'Software defined power substations: An architecture for network communications and its control plane'
+  authors: E. A. Leal, J. F. Botero
+  venue: IEEE Latin-American Conference on Communications (LATINCOM)
+  type: conference
+  doi: 10.1109/LATINCOM.2016.7811573
+  verified: dblp
+  topics:
+  - programmable
+  - critical
+- year: 2016
+  title: S3N - Smart Solution for Substation Networks, an architecture for the management of communication networks in power substations
+  authors: E. A. Leal, J. F. Botero
+  venue: IFIP International Conference on Autonomous Infrastructure, Management and Security (AIMS)
+  type: conference
+  doi: 10.1007/978-3-319-39814-3_5
+  verified: dblp
+  topics:
+  - security
+  - critical
+- year: 2016
+  title: Management of resources under priorities in EON using a modified RDM based on the squatting-kicking approach
+  authors: X. Hesselbach, J. Dantas, J. R. Amazonas, J. F. Botero, J. R. Piney
+  venue: International Conference on Transparent Optical Networks (ICTON)
+  type: conference
+  doi: 10.1109/ICTON.2016.7550386
+  verified: dblp
+  topics:
+  - other
+- year: 2015
+  title: Distributed and scalable embedding of virtual networks
+  authors: M. T. Beck, A. Fischer, J. F. Botero, C. Linnhoff-Popien, H. de Meer
+  venue: Journal of Network and Computer Applications
+  type: journal
+  doi: 10.1016/j.jnca.2015.06.012
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2015
+  title: 'Virtual Data Center Embedding: A Survey'
+  authors: E. S. Correa, L. Fletscher, J. F. Botero
+  venue: IEEE Latin America Transactions
+  type: journal
+  doi: 10.1109/TLA.2015.7112029
+  verified: scholar
+  topics:
+  - virtualization
+- year: 2015
+  title: Modelling the NFV forwarding graph for an optimal network service deployment
+  authors: J. Ferrer Riera, X. Hesselbach, M. Żotkiewicz, M. Szostak, J. F. Botero
+  venue: International Conference on Transparent Optical Networks (ICTON)
+  type: conference
+  doi: 10.1109/ICTON.2015.7193483
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2015
+  title: SON mechanism for green heterogeneous cellular networks
+  authors: L. Fletscher, C. V. Peroni, J. F. Botero
+  venue: IFIP International Conference on Autonomous Infrastructure, Management and Security (AIMS)
+  type: conference
+  doi: 10.1007/978-3-319-20034-7_4
+  verified: dblp
+  topics:
+  - security
+- year: 2014
+  title: Coordinated allocation of service function chains
+  authors: M. T. Beck, J. F. Botero
+  venue: IEEE Global Communications Conference (GLOBECOM)
+  type: conference
+  doi: 10.1109/GLOCOM.2014.7417401
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2013
+  title: 'Virtual Network Embedding: A Survey'
+  authors: A. Fischer, J. F. Botero, M. T. Beck, H. de Meer, X. Hesselbach
+  venue: IEEE Communications Surveys & Tutorials
+  type: journal
+  doi: 10.1109/SURV.2013.013013.00155
+  featured: true
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2013
+  title: Greener networking in a network virtualization environment
+  authors: J. F. Botero, X. Hesselbach
+  venue: Computer Networks
+  type: journal
+  doi: 10.1016/j.comnet.2013.04.004
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2013
+  title: A novel paths algebra-based strategy to flexibly solve the link mapping stage of VNE problems
+  authors: J. F. Botero, M. Molina, X. Hesselbach-Serra, J. R. Amazonas
+  venue: Journal of Network and Computer Applications
+  type: journal
+  doi: 10.1016/j.jnca.2013.02.029
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2013
+  title: A novel collaboration paradigm for reducing energy consumption and carbon dioxide emissions in data centres
+  authors: D. Rincón, A. Agustí-Torra, J. F. Botero, F. Raspall, D. Remondo, X. Hesselbach, M. T. Beck, H. de Meer, F. Niedermeier, G. Giuliani
+  venue: The Computer Journal
+  type: journal
+  doi: 10.1093/comjnl/bxt053
+  verified: dblp
+  topics:
+  - critical
+- year: 2013
+  title: A distributed, parallel, and generic virtual network embedding framework
+  authors: M. T. Beck, A. Fischer, H. de Meer, J. F. Botero, X. Hesselbach
+  venue: IEEE International Conference on Communications (ICC)
+  type: conference
+  doi: 10.1109/ICC.2013.6655087
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2013
+  title: 'A generic architecture for demand response: The ALL4Green approach'
+  authors: R. Basmadjian, G. Lovasz, M. T. Beck, H. de Meer, X. Hesselbach-Serra, J. F. Botero, et al.
+  venue: International Conference on Cloud and Green Computing (CGC)
+  type: conference
+  doi: 10.1109/CGC.2013.79
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2013
+  title: 'GreenSLAs: Providing energy consumption flexibility in DCs through energy-aware contracts'
+  authors: J. F. Botero, S. Klingert, X. Hesselbach-Serra, A. Falcone, G. Giuliani
+  venue: International Conference on Smart Grids and Green IT Systems (SMARTGREENS)
+  type: conference
+  doi: 10.5220/0004379401190122
+  verified: dblp
+  topics:
+  - critical
+- year: 2013
+  title: Study, evaluation and contributions to new algorithms for the embedding problem in a network virtualization environment
+  authors: J. F. Botero
+  venue: Ph.D. thesis, Universitat Politècnica de Catalunya
+  type: other
+  doi: 10.5821/dissertation-2117-94958
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2012
+  title: Energy efficient virtual network embedding
+  authors: J. F. Botero, X. Hesselbach, M. Duelli, D. Schlosser, A. Fischer, H. de Meer
+  venue: IEEE Communications Letters
+  type: journal
+  doi: 10.1109/LCOMM.2012.030912.120082
+  verified: dblp
+  topics:
+  - virtualization
+  - critical
+- year: 2012
+  title: Optimal mapping of virtual networks with hidden hops
+  authors: J. F. Botero, X. Hesselbach, A. Fischer, H. de Meer
+  venue: Telecommunication Systems
+  type: journal
+  doi: 10.1007/s11235-011-9437-0
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2011
+  title: 'ALEVIN: A framework to develop, compare, and analyze virtual network embedding algorithms'
+  authors: A. Fischer, J. F. Botero, M. Duelli, D. Schlosser, X. Hesselbach, H. de Meer
+  venue: Electronic Communications of the EASST
+  type: journal
+  doi: 10.14279/tuj.eceasst.37.495
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2011
+  title: 'VNREAL: Virtual network resource embedding algorithms in the framework ALEVIN'
+  authors: M. Duelli, D. Schlosser, J. F. Botero, X. Hesselbach, A. Fischer, H. de Meer
+  venue: EURO-NGI Conference on Next Generation Internet (NGI)
+  type: conference
+  doi: 10.1109/NGI.2011.5985874
+  verified: dblp
+  topics:
+  - virtualization
+- year: 2009
+  title: The bottlenecked virtual network problem in bandwidth allocation for network virtualization
+  authors: J. F. Botero, X. Hesselbach
+  venue: IEEE Latin-American Conference on Communications (LATINCOM)
+  type: conference
+  doi: 10.1109/LATINCOM.2009.5305042
+  verified: scholar
+  topics:
+  - virtualization
+- year: 2023
+  title: SDNFlow Dataset
+  authors: J. B. Garc\'\ia, J. Vergara, S. R\'\ios-Guiral, C. Garzón, S. A. Gutierrez, J. F. Botero, et al.
+  venue: IEEE DataPort
+  type: other
+  doi: 10.21227/40v2-hh58
+  verified: dblp
+  topics:
+  - programmable
+- year: 2025
+  title: WinMal25 Dataset
+  authors: J. G. Almaraz-Rivera, J. A. Cantoral-Ceballos, J. F. Botero, J. A. Pérez-Díaz, P. Branco, G. Jourdan
+  venue: IEEE DataPort
+  type: other
+  doi: 10.21227/d820-q842
+  verified: dblp
+  topics:
+  - other
+- year: 2013
+  title: A Data Center Control Architecture for Power Consumption Reduction
+  authors: J. F. Botero, D. Rincón, A. Agusti-Torra, X. Hesselbach, F. Raspall, D. Remondo, et al.
+  venue: Energy-Efficient Data Centers (E2DC 2013), LNCS
+  type: conference
+  doi: 10.1007/978-3-642-55149-9_5
+  verified: dblp
+  topics:
+  - virtualization
+  - critical
+- year: 2006
+  title: Implementación de un Dispositivo para la Gestión de los Recursos del Ancho de Banda
+  authors: E. A. Machado, J. F. Botero
+  venue: Revista Avances en Sistemas e Informática
+  type: journal
+  verified: dblp
+  topics:
+  - other

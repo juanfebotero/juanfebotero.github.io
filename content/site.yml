@@ -1,0 +1,15 @@
+# ------------------------------------------------------------
+# General site settings.
+# ------------------------------------------------------------
+github_user: "juanfebotero"
+github_repo: "juanfebotero.github.io"
+branch: "main"
+base_path: ""
+
+# Public address. With a custom domain, set "url" to https://<domain> and "domain" to <domain>
+# (build.py then writes the CNAME file GitHub Pages needs). Leave "domain" empty otherwise.
+url: "https://juanfebotero.github.io"
+domain: ""
+
+# Date shown in the footer (YYYY-MM-DD)
+updated: "2026-10-12"

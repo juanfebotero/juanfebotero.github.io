@@ -1,0 +1,184 @@
+% Curriculum vitae of Juan Felipe Botero Vega. Compile with XeLaTeX (fonts are in ./fonts).
+% Same visual identity as the website: Source Serif 4 (headings), IBM Plex Sans (text), IBM Plex Mono (dates).
+\documentclass[10pt,a4paper]{article}
+\usepackage[a4paper,top=18mm,bottom=18mm,left=20mm,right=20mm]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[hidelinks]{hyperref}
+
+\setmainfont{IBMPlexSans}[Path=fonts/, Extension=.ttf, UprightFont=*-Regular, ItalicFont=*-Italic,
+  BoldFont=*-SemiBold, BoldItalicFont=*-SemiBoldItalic]
+\newfontfamily\serif{SourceSerif4}[Path=fonts/, Extension=.ttf, UprightFont=*-Semibold, BoldFont=*-Bold, ItalicFont=*-Italic]
+\newfontfamily\mono{IBMPlexMono}[Path=fonts/, Extension=.ttf, UprightFont=*-Regular, BoldFont=*-Medium]
+
+\definecolor{accent}{HTML}{175C3E}
+\definecolor{muted}{HTML}{4D5B53}
+\definecolor{rule}{HTML}{D3DCD6}
+
+\linespread{1.12}
+\hyphenpenalty=5000
+\exhyphenpenalty=5000
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\hypersetup{colorlinks=true, urlcolor=accent, linkcolor=accent}
+
+\titleformat{\section}{\serif\fontsize{13.5}{16}\selectfont\color{accent}}{}{0pt}{}[\vspace{2pt}{\color{rule}\titlerule}]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+\titleformat{\subsection}{\mono\fontsize{7.6}{10}\selectfont\color{muted}\MakeUppercase}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{7pt}{3pt}
+
+\newcommand{\me}{\textbf{J. F. Botero}}
+\newcommand{\yr}[1]{{\mono\small\color{muted}#1}}
+% Dated entry: \entry{years}{text}
+\newcommand{\entry}[2]{{\raggedright\noindent\hangindent=24mm\hangafter=1\makebox[24mm][l]{\yr{#1}}#2\par}\vspace{3pt}}
+\setlist[itemize]{leftmargin=12pt, itemsep=2.5pt, topsep=2pt, label={\color{accent}\textbullet}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\mono\scriptsize\color{muted}Juan Felipe Botero Vega · Curriculum vitae · October 2026}
+\fancyfoot[R]{\mono\scriptsize\color{muted}\thepage\,/\,\pageref{LastPage}}
+
+\begin{document}
+
+% ---------------------------------------------------------------- header
+\begin{minipage}[t]{0.76\linewidth}
+  {\serif\fontsize{24}{28}\selectfont Juan Felipe Botero Vega}\par\vspace{5pt}
+  {\large Full Professor, Department of Electronic and Telecommunications Engineering}\par
+  Faculty of Engineering, Universidad de Antioquia, Medellín, Colombia\par
+  Guest Professor, Department of Computer Science, University of Antwerp, Belgium\par
+  \vspace{6pt}
+  {\mono\small juanf.botero@udea.edu.co\enspace·\enspace\href{https://juanfebotero.github.io}{juanfebotero.github.io}\par
+  \href{https://orcid.org/0000-0002-7072-8924}{ORCID 0000-0002-7072-8924}\enspace·\enspace\href{https://scholar.google.com/citations?user=Ljd3pb0AAAAJ}{Google Scholar}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.19\linewidth}\vspace{0pt}\raggedleft
+  \includegraphics[width=\linewidth]{photo.jpg}
+\end{minipage}
+
+\vspace{10pt}
+{\color{muted}I work on the management of programmable networks (SDN, NFV and P4) with mathematical optimization and machine learning, with applications to network cybersecurity and critical infrastructure such as digital power substations and smart grids. I am a Senior Researcher in the Colombian Ministry of Science (Minciencias) classification and a member of the GITA research group.}
+
+\vspace{8pt}
+\noindent\begin{tabularx}{\linewidth}{@{}XXXXX@{}}
+{\serif\Large 5,751}\newline{\small\color{muted}citations} &
+{\serif\Large 29}\newline{\small\color{muted}h-index} &
+{\serif\Large about 50}\newline{\small\color{muted}journal articles} &
+{\serif\Large 7}\newline{\small\color{muted}Ph.D. theses} &
+{\serif\Large 30}\newline{\small\color{muted}research projects}\\
+\end{tabularx}
+{\mono\scriptsize\color{muted}Citation metrics from Google Scholar, 12 October 2026.}
+
+% ---------------------------------------------------------------- positions
+\section{Academic positions}
+\entry{2013–}{Faculty member, Universidad de Antioquia (Assistant, Associate and, currently, Full Professor). On sabbatical leave from March 2026 to March 2027, designing the university's new Specialization in Cybersecurity.}
+\entry{2021–}{Guest Professor, Department of Computer Science, University of Antwerp. Teaches the master's course \emph{Future Internet}.}
+\entry{2024–2025}{Coordinator of the M.Sc. in Telecommunications Engineering, Universidad de Antioquia.}
+\entry{2019–2024}{Coordinator of the Ph.D. in Electronic and Computer Engineering, Universidad de Antioquia.}
+\entry{until 2017}{Coordinator of the GITA research group, Universidad de Antioquia.}
+
+\subsection{Research stays}
+\entry{2016}{Postdoctoral stay, University of Antwerp: end-to-end configuration of virtualized network and cloud components with quality of service guarantees.}
+\entry{2011–2012}{Doctoral stay, Chair of Computer Networks and Communications, University of Passau, Germany: evaluation of virtual network embedding algorithms and design of an energy-efficient algorithm.}
+
+% ---------------------------------------------------------------- education
+\section{Education}
+\entry{2013}{Ph.D. in Telematics Engineering, Universitat Politècnica de Catalunya (UPC), Barcelona. Thesis on algorithms for the virtual network embedding problem, advised by Xavier Hesselbach. \emph{Cum laude} with international mention.}
+\entry{2008}{M.Sc. in Telematics Engineering, Universitat Politècnica de Catalunya.}
+\entry{2006}{B.Eng. in Systems Engineering, Universidad de Antioquia, Medellín.}
+
+% ---------------------------------------------------------------- awards
+\section{Awards and recognition}
+\entry{2023}{Best Poster Award, LatinX in AI (LXAI) Workshop at ICCV 2023.}
+\entry{2021}{Best Paper Award, IEEE SDS 2021.}
+\entry{2018}{Outstanding and Meritorious Distinctions, Universidad de Antioquia.}
+\entry{2015}{Best Paper Award, ICSNC 2015 (IARIA), for “A novel path computing framework under QoX constraints based on N\&PV functions embedding”.}
+\entry{2013}{Ph.D. thesis awarded \emph{cum laude} with international mention, UPC.}
+
+% ---------------------------------------------------------------- supervision
+\section{Supervision}
+\subsection{Ph.D. theses}
+\entry{2023–}{Paulina Arregocés (ongoing).}
+\entry{2022–2026}{Josué Genaro Almaraz-Rivera, co-supervised with Tecnológico de Monterrey.}
+\entry{2020–2025}{Paola Soto, co-supervised with the University of Antwerp.}
+\entry{2019–2025}{Jaime Vergara.}
+\entry{2015–2019}{Alexánder Leal.}
+\entry{2015–2019}{Bart Spinnewyn, co-supervised with the University of Antwerp.}
+\entry{2014–2018}{Juliver Gil Herrera.}
+\entry{2014–2018}{Michael Till Beck, in cooperation with Ludwig-Maximilians-Universität München.}
+\subsection{Postdoctoral researchers and master's theses}
+\entry{2021–2023}{Sergio Armando Gutiérrez, postdoctoral researcher in the project on cybersecurity for the critical infrastructure of the electricity sector.}
+\entry{}{About 17 master's theses, most of them in the M.Sc. in Telecommunications Engineering, Universidad de Antioquia.}
+
+% ---------------------------------------------------------------- projects
+\section{Research projects (selection)}
+{\small\color{muted}PI: principal investigator. Co-I: co-investigator. Titles of Colombian projects are translated from Spanish.}\par\vspace{4pt}
+\entry{2026–2029}{\textbf{QC3AI-LA}: Developing quantum computing capabilities for cybersecurity and artificial intelligence for Latin America. Erasmus+ Capacity Building in Higher Education, coordinated by Universidad de Castilla-La Mancha. Co-I.}
+\entry{2025–2028}{\textbf{SUCCESS}. Erasmus+, with Mälardalen University. Co-I.}
+\entry{2024–2026}{\textbf{LatinAware}: an AI-based predictive engine to detect cyberattacks targeting Latin American industry. Fundación Universidad de Antioquia, with Aligo S.A.S. PI.}
+\entry{2024–2025}{Attack detection through open datasets and artificial intelligence for cybersecurity applications. LACNIC, with Tecnológico de Monterrey. PI.}
+\entry{2023–2026}{Design and implementation of a smart grid for the optimal management of non-conventional renewable energy sources. Minciencias. Co-I.}
+\entry{2021–2024}{Strengthening research and development capabilities in cyber-risk management for the critical infrastructure of the electricity sector. Colombian General Royalties System (SGR), with Universidad Nacional de Colombia. PI.}
+\entry{2021–2023}{Comprehensive internationalization through digitalization, innovation and global-regional coproduction. STINT (Sweden), with Mälardalen University. Co-I.}
+\entry{2019–2023}{Security in next-generation communication networks based on SDN and NFV. CYTED thematic network with partners in Spain, Brazil, Guatemala and Costa Rica. PI and network coordinator.}
+\entry{2019–2021}{Technological platform for metering communications and their security in the non-regulated energy market. Minciencias, with Kinnesis Solutions. PI.}
+\entry{2018}{SDN-based network management system enabling smart grid technologies for the energy sector. Ruta N. PI.}
+\entry{2008–2014}{European projects during the Ph.D. at UPC: Euro-NF (Network of Excellence), MANTICORE, VNREAL, Mantychore and All4Green.}
+
+% ---------------------------------------------------------------- teaching
+\section{Teaching}
+\subsection{Universidad de Antioquia}
+\entry{2013–2025}{\emph{Optimization Techniques} (undergraduate, Telecommunications Engineering).}
+\entry{2024–2025}{\emph{Information Security} and \emph{Computer Networks III} (undergraduate).}
+\entry{2013–2019}{\emph{Network Modeling and Optimization} (graduate, yearly).}
+\entry{2025}{\emph{Future Internet} (graduate).}
+\subsection{University of Antwerp}
+\entry{2021–}{\emph{Future Internet} (master's programs, Department of Computer Science), every academic year.}
+
+% ---------------------------------------------------------------- service
+\section{Academic service}
+\entry{2020–}{Associate Editor, \emph{IEEE Transactions on Network and Service Management}.}
+\entry{2019–}{Associate Editor, \emph{Journal of Network and Systems Management} (Springer). Guest Editor of the special issue “Security in Next-Generation Communication Networks”.}
+\entry{2026}{Keynote speaker, IEEE ColCom 2026.}
+\entry{2018–2024}{TPC Co-Chair of IEEE ColCom 2018, AnNet 2022 (IEEE/IFIP NOMS), IEEE ANDESCON 2024 and IEEE LATINCOM 2024.}
+\entry{2015–2024}{Tutorials at IEEE ColCom 2015, IEEE LATINCOM 2022 and IEEE/IFIP NOMS 2023 and 2024.}
+\entry{2020–2024}{TPC member of IEEE CNSM (2020 to 2024) and IEEE LATINCOM (2022 to 2024).}
+\entry{}{Reviewer for IEEE JSAC, IEEE Communications Magazine, IEEE Network, IEEE Communications Letters, IEEE Transactions on Cloud Computing, Computer Networks, Computer Communications, JNCA and Ad Hoc Networks, among others.}
+\entry{}{Led the self-assessment and accreditation processes of the M.Sc. and Ph.D. programs and of the undergraduate program in Telecommunications Engineering, Universidad de Antioquia.}
+
+% ---------------------------------------------------------------- publications
+\section{Selected publications}
+{\small\color{muted}Full list: \href{https://scholar.google.com/citations?user=Ljd3pb0AAAAJ}{Google Scholar} and the publications page of the website.}\par\vspace{3pt}
+\subsection{Journals}
+\begin{itemize}
+\item S. Ríos-Guiral, A. Lahmadi, \me, S. A. Gutiérrez. Leveraging reinforcement learning for traffic engineering in programmable networks: a survey. \emph{IEEE Communications Surveys \& Tutorials} 28, 1318--1350, 2026. {\mono\footnotesize doi:10.1109/COMST.2025.3632870}
+\item S. A. Gutiérrez, \me, L. Fletscher, L. P. Gaspary, N. Gaviria, E. Jacob, et al. Cybersecurity via programmable networks: are we there yet? \emph{Journal of Network and Systems Management} 33(4), 95, 2025. {\mono\footnotesize doi:10.1007/s10922-025-09970-9}
+\item J. G. Almaraz-Rivera, J. A. Cantoral-Ceballos, \me, F. J. Muñoz, et al. Hyphatia: a card-not-present fraud detection system based on self-supervised tabular learning. \emph{IEEE Open Journal of the Computer Society} 6, 812--821, 2025. {\mono\footnotesize doi:10.1109/OJCS.2025.3570600}
+\item C. Garzón, S. Ríos-Guiral, E. Leal, S. A. Gutiérrez, \me. P4 cybersecurity solutions: taxonomy and open challenges. \emph{IEEE Access} 12, 6376--6399, 2024. {\mono\footnotesize doi:10.1109/ACCESS.2023.3347332}
+\item D. Góez, E. A. Beyazit, L. A. Fletscher, \me, N. Gaviria, S. Latré, et al. Resource-efficient spectrum-based traffic classification on constrained devices. \emph{IEEE Open Journal of the Communications Society} 5, 2024. {\mono\footnotesize doi:10.1109/OJCOMS.2024.3396077}
+\item S. A. Gutiérrez, \me, N. Gaviria, L. A. Fletscher, A. Leal. Next-generation power substation communication networks: IEC 61850 meets programmable networks. \emph{IEEE Power and Energy Magazine} 21(5), 58--67, 2023. {\mono\footnotesize doi:10.1109/MPE.2023.3288579}
+\item P. Soto, M. Camelo, D. De Vleeschauwer, Y. De Bock, C. Y. Chang, \me, S. Latré. Network intelligence for NFV scaling in closed-loop architectures. \emph{IEEE Communications Magazine} 61(6), 66--72, 2023. {\mono\footnotesize doi:10.1109/MCOM.001.2200529}
+\item J. G. Almaraz-Rivera, J. A. Pérez-Díaz, J. A. Cantoral-Ceballos, \me, et al. Toward the protection of IoT networks: introducing the LATAM-DDoS-IoT dataset. \emph{IEEE Access} 10, 106909--106920, 2022. {\mono\footnotesize doi:10.1109/ACCESS.2022.3211513}
+\item I. A. Valdovinos, J. A. Pérez-Díaz, K. K. R. Choo, \me. Emerging DDoS attack detection and mitigation strategies in software-defined networks: taxonomy, challenges and future directions. \emph{Journal of Network and Computer Applications} 187, 103093, 2021. {\mono\footnotesize doi:10.1016/j.jnca.2021.103093}
+\item J. C. Correa Chica, J. C. Imbachi, \me. Security in SDN: a comprehensive survey. \emph{Journal of Network and Computer Applications} 159, 102595, 2020. {\mono\footnotesize doi:10.1016/j.jnca.2020.102595}
+\item J. Gil Herrera, \me. Resource allocation in NFV: a comprehensive survey. \emph{IEEE Transactions on Network and Service Management} 13(3), 518--532, 2016. {\mono\footnotesize doi:10.1109/TNSM.2016.2598420}
+\item A. Fischer, \me, M. T. Beck, H. de Meer, X. Hesselbach. Virtual network embedding: a survey. \emph{IEEE Communications Surveys \& Tutorials} 15(4), 1888--1906, 2013. {\mono\footnotesize doi:10.1109/SURV.2013.013013.00155}
+\end{itemize}
+\subsection{Conferences}
+\begin{itemize}
+\item C. Garzón, A. Lahmadi, J. Vergara, A. Leal, \me. In-band ARP-based man-in-the-middle attack detection using P4 programmable switches. IEEE LATINCOM 2024.
+\item C. López, S. Ríos-Guiral, J. Vergara, \me, S. A. Gutiérrez. Network traffic analysis through flows and packets with machine learning. IEEE ANDESCON 2024.
+\item O. Roa, \me, S. A. Gutiérrez-Betancur, O. A. Tobar-Rosero. GOOSEAttacker: synthetic attack generation tool for IEC 61850. IEEE LATINCOM 2023.
+\item S. Gómez Macías, L. P. Gaspary, \me. ORACLE: an architecture for collaboration of data and control planes to detect DDoS attacks. IFIP/IEEE IM 2021.
+\end{itemize}
+
+% ---------------------------------------------------------------- languages
+\section{Languages}
+Spanish (native), English (full professional proficiency), Catalan (reading and basic speaking).
+
+\end{document}

@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}{{ t.nav_projects }} · {{ profile.name }}{% endblock %}
+{% block description %}{{ t.projects_intro }}{% endblock %}
+{% block main %}
+<section class="page-head">
+  <div class="wrap">
+    <h1 class="display display-sm">{{ t.nav_projects }}</h1>
+    <p class="lede">{{ t.projects_intro }}</p>
+    <dl class="metrics metrics-3">
+      <div><dd>{{ pstats.n }}</dd><dt>{{ t.n_projects }}</dt></div>
+      <div><dd>{{ pstats.pi }}</dd><dt>{{ t.n_pi }}</dt></div>
+      <div><dd>{{ pstats.ongoing }}</dd><dt>{{ t.n_ongoing }}</dt></div>
+    </dl>
+  </div>
+</section>
+<section class="section section-tight">
+  <div class="wrap">
+    <form class="filters" onsubmit="return false">
+      <div class="field">
+        <label for="proj-role">{{ t.role }}</label>
+        <select id="proj-role">
+          <option value="all">{{ t.role_all }}</option>
+          <option value="pi">{{ t.role_pi }}</option>
+          <option value="co">{{ t.role_co }}</option>
+          <option value="na">{{ t.role_na }}</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="proj-area">{{ t.area }}</label>
+        <select id="proj-area">
+          <option value="all">{{ t.area_all }}</option>
+          {% for a in ["security", "smartgrid", "virtualization", "iot", "education"] %}<option value="{{ a }}">{{ t["area_" + a] }}</option>{% endfor %}
+        </select>
+      </div>
+    </form>
+    <p class="result-count mono" id="proj-count" data-label="{{ t.n_projects }}" aria-live="polite">{{ projects|length }} {{ t.n_projects }}</p>
+    <ol class="projects">
+      {% for p in projects %}
+      <li class="project" data-role="{{ p.role or 'na' }}" data-area="{{ p.area or 'other' }}">
+        <div class="proj-head">
+          <span class="proj-years mono">{{ p.years }}</span>
+          <span class="pill {{ 'pill-active' if p.ongoing else '' }}">{{ t.status_ongoing if p.ongoing else t.status_done }}</span>
+          <span class="role role-{{ p.role or 'na' }}">{{ t['role_' + (p.role or 'na')] }}</span>
+        </div>
+        <h2 class="proj-title">{{ p.title }}</h2>
+        <dl class="proj-meta">
+          {% if p.funder %}<div><dt>{{ t.funder }}</dt><dd>{{ p.funder }}</dd></div>{% endif %}
+          {% if p.partners %}<div><dt>{{ t.partners_label }}</dt><dd>{{ p.partners | join(" · ") }}</dd></div>{% endif %}
+          {% if p.pi and p.role == 'co' %}<div><dt>{{ t.pi_label }}</dt><dd>{{ p.pi }}</dd></div>{% endif %}
+        </dl>
+      </li>
+      {% endfor %}
+    </ol>
+    <p class="empty" id="proj-empty" hidden>{{ t.no_results }}</p>
+  </div>
+</section>
+{% endblock %}

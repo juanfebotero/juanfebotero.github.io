@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}{{ t.nav_students }} · {{ profile.name }}{% endblock %}
+{% block description %}{{ t.students_intro }}{% endblock %}
+{% block main %}
+<section class="page-head">
+  <div class="wrap">
+    <h1 class="display display-sm">{{ t.nav_students }}</h1>
+    <p class="lede">{{ t.students_intro }}</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap news-grid">
+    <h2 class="h2">{{ t.phd_students }}</h2>
+    <div>
+      <ul class="people">
+        {% for s in students.phd %}
+        <li>
+          <span class="people-years mono">{{ s.years }}</span>
+          <div>
+            <p class="people-name">{{ s.name }}</p>
+            {% if s.note %}<p class="people-note">{{ s.note[lang] }}</p>{% endif %}
+          </div>
+          <span class="pill {{ 'pill-active' if s.status == 'ongoing' else '' }}">{{ t.ongoing_st if s.status == 'ongoing' else t.completed_st }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+      <p class="after-list">{{ t.masters_line.format(n=students.masters_count) }}</p>
+    </div>
+  </div>
+</section>
+<section class="section section-alt">
+  <div class="wrap news-grid">
+    <h2 class="h2">{{ t.postdocs }}</h2>
+    <ul class="people">
+      {% for s in students.postdoc %}
+      <li>
+        <span class="people-years mono">{{ s.years }}</span>
+        <div>
+          <p class="people-name">{{ s.name }}</p>
+          {% if s.note %}<p class="people-note">{{ s.note[lang] }}</p>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap news-grid">
+    <h2 class="h2">{{ t.prospective }}</h2>
+    <div class="prose">
+      <p>{{ t.prospective_text }}</p>
+      <p class="email-line"><span class="mono sel" id="email-st">{{ profile.contact.email }}</span><button class="copy" type="button" data-copy="email-st" data-done="{{ t.copied }}">{{ t.copy_btn }}</button></p>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{% block title %}{{ profile.name }}{% endblock %}</title>
+<meta name="description" content="{% block description %}{{ profile.tagline[lang] }}{% endblock %}">
+<meta name="author" content="{{ profile.full_name }}">
+<link rel="canonical" href="{{ canonical }}">
+<link rel="alternate" hreflang="{{ lang }}" href="{{ canonical }}">
+<link rel="alternate" hreflang="{{ other }}" href="{{ alt_canonical }}">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="{{ self.title() }}">
+<meta property="og:description" content="{{ self.description() }}">
+<meta property="og:url" content="{{ canonical }}">
+<meta property="og:image" content="{{ site.url.rstrip('/') }}/static/img/profile-square.jpg">
+<meta property="og:locale" content="{{ 'es_CO' if lang == 'es' else 'en_US' }}">
+<meta name="twitter:card" content="summary">
+<meta name="color-scheme" content="light dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="{{ static('css/site.css') }}">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23175c3e'/%3E%3Cpath d='M8 22L16 9L24 22Z' fill='none' stroke='white' stroke-width='2'/%3E%3Ccircle cx='16' cy='9' r='3' fill='white'/%3E%3Ccircle cx='8' cy='22' r='3' fill='white'/%3E%3Ccircle cx='24' cy='22' r='3' fill='white'/%3E%3C/svg%3E">
+<script type="application/ld+json">{{ jsonld }}</script>
+<script>try{var s=localStorage.getItem('theme');if(s==='dark'||s==='light')document.documentElement.setAttribute('data-theme',s)}catch(e){}</script>
+</head>
+<body class="page-{{ page }}">
+<a class="skip" href="#main">{{ t.skip }}</a>
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="{{ url('home') }}">
+      <span class="brand-name">{{ profile.name }}</span>
+      <span class="brand-sub">{{ 'Universidad de Antioquia' }}</span>
+    </a>
+    <button class="menu-btn" type="button" id="menu-btn" aria-expanded="false" aria-controls="site-nav">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span>{{ t.menu }}</span>
+    </button>
+    <nav class="nav" id="site-nav" aria-label="{{ t.menu }}">
+      <ul>
+        {% for pid in nav %}
+        <li><a href="{{ url(pid) }}" {% if page == pid %}aria-current="page"{% endif %}>{{ t['nav_' + pid] }}</a></li>
+        {% endfor %}
+      </ul>
+      <div class="tools">
+        <a class="lang" href="{{ alt_url }}" hreflang="{{ other }}" lang="{{ other }}" title="{{ t.switch }}"><span aria-hidden="true">{{ t.switch_short }}</span><span class="sr">{{ t.switch }}</span></a>
+        <button class="theme-btn" type="button" id="theme-toggle" aria-label="{{ t.theme }}" title="{{ t.theme }}">
+          <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></svg>
+          <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+{% block main %}{% endblock %}
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-in">
+    <div class="footer-id">
+      <p class="footer-name">{{ profile.full_name }}</p>
+      <p>{{ profile.position[lang] }} · {{ profile.institution[lang] }}</p>
+      <p>{{ profile.second_affiliation[lang] }}</p>
+    </div>
+    <ul class="footer-links">
+      {% for l in profile.links %}<li><a href="{{ l.url }}" rel="noopener">{{ l.label }}</a></li>{% endfor %}
+    </ul>
+    <p class="footer-meta mono">{{ t.updated }} {{ fmt_date(build_date) }} · {{ t.footer_note }}</p>
+  </div>
+</footer>
+<script src="{{ static('js/site.js') }}" defer></script>
+</body>
+</html>

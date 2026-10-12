@@ -1,0 +1,123 @@
+# ------------------------------------------------------------
+# Courses (ficha breve). One block per course.
+# block: pregrado | posgrado | antwerp | especializacion
+# status: active | sabbatical | upcoming | inactive
+# semesters: free text in each language; leave "" when not confirmed.
+# syllabus: path under static/ to the official program in PDF ("" = not published).
+# classroom_url / classroom_code: shown only when status is active.
+# pending: internal notes, never rendered.
+# ------------------------------------------------------------
+blocks:
+  - id: pregrado
+    es: {title: "Pregrado · Universidad de Antioquia", text: "Cursos del programa de Ingeniería de Telecomunicaciones."}
+    en: {title: "Undergraduate · Universidad de Antioquia", text: "Courses in the Telecommunications Engineering program."}
+  - id: posgrado
+    es: {title: "Posgrado · Universidad de Antioquia", text: "Cursos de la Maestría en Ingeniería de Telecomunicaciones y del Doctorado en Ingeniería Electrónica y de Computación."}
+    en: {title: "Graduate · Universidad de Antioquia", text: "Courses in the M.Sc. in Telecommunications Engineering and the Ph.D. in Electronic and Computer Engineering."}
+  - id: antwerp
+    es: {title: "University of Antwerp", text: "Curso de maestría que dicto como Guest Professor del Departamento de Ciencias de la Computación desde 2021."}
+    en: {title: "University of Antwerp", text: "Master's course I teach as Guest Professor in the Department of Computer Science since 2021."}
+  - id: especializacion
+    es: {title: "Especialización en Ciberseguridad · Universidad de Antioquia", text: "Programa nuevo de dos semestres y 24 créditos, diseñado durante mi año sabático en colaboración con el sector productivo. Su primera cohorte está prevista para 2027."}
+    en: {title: "Specialization in Cybersecurity · Universidad de Antioquia", text: "A new two-semester, 24-credit program designed during my sabbatical together with industry partners. The first cohort is planned for 2027."}
+
+courses:
+  - id: tecnicas-optimizacion
+    block: pregrado
+    status: sabbatical
+    language: es
+    title: {es: "Técnicas de Optimización", en: "Optimization Techniques"}
+    program: {es: "Ingeniería de Telecomunicaciones", en: "Telecommunications Engineering"}
+    semesters: {es: "De 2013-2 a 2025-2", en: "2013-2 to 2025-2"}
+    description:
+      es: "Formulación y solución de problemas de ingeniería como modelos de optimización: programación lineal y entera, el método símplex, flujos en redes, complejidad computacional, metaheurísticas y fundamentos de optimización convexa."
+      en: "Formulating and solving engineering problems as optimization models: linear and integer programming, the simplex method, network flows, computational complexity, metaheuristics and the basics of convex optimization."
+    syllabus: "syllabi/tecnicas-optimizacion-2024.pdf"
+    classroom_url: ""
+    classroom_code: ""
+    pending: ""
+
+  - id: seguridad-informacion
+    block: pregrado
+    status: sabbatical
+    language: es
+    title: {es: "Seguridad de la Información", en: "Information Security"}
+    program: {es: "Ingeniería de Telecomunicaciones", en: "Telecommunications Engineering"}
+    semesters: {es: "2024-2 y 2025-2", en: "2024-2 and 2025-2"}
+    description:
+      es: "Principios de seguridad de la información y criptografía aplicada: cifrado simétrico y asimétrico, anatomía de un ataque, ataques de red y control de acceso, TLS y HTTPS, VPN con IPsec, cortafuegos y listas de control de acceso."
+      en: "Information security principles and applied cryptography: symmetric and asymmetric encryption, anatomy of an attack, network attacks and access control, TLS and HTTPS, IPsec VPNs, firewalls and access control lists."
+    syllabus: ""
+    classroom_url: ""
+    classroom_code: ""
+    pending: "Microcurrículo vigente pendiente (el autor lo enviará)."
+
+  - id: redes-computadores-3
+    block: pregrado
+    status: sabbatical
+    language: es
+    title: {es: "Redes de Computadores III", en: "Computer Networks III"}
+    program: {es: "Ingeniería de Telecomunicaciones", en: "Telecommunications Engineering"}
+    semesters: {es: "2024-1 y 2025-1", en: "2024-1 and 2025-1"}
+    description:
+      es: "Arquitectura de Internet y redes de proveedor: direccionamiento, enrutamiento y transición a IPv6, BGP e iBGP, espacios de nombres de red en Linux y una introducción práctica a SDN con OpenFlow, Mininet y POX."
+      en: "Internet architecture and provider networks: IPv6 addressing, routing and transition, BGP and iBGP, Linux network namespaces and a hands-on introduction to SDN with OpenFlow, Mininet and POX."
+    syllabus: ""
+    classroom_url: ""
+    classroom_code: ""
+    pending: "Semestres confirmados el 12-10-2026. Microcurrículo vigente pendiente (el autor lo enviará)."
+
+  - id: future-internet-udea
+    block: posgrado
+    status: sabbatical
+    language: es
+    title: {es: "Future Internet", en: "Future Internet"}
+    program: {es: "Maestría en Ingeniería de Telecomunicaciones", en: "M.Sc. in Telecommunications Engineering"}
+    semesters: {es: "2025-1", en: "2025-1"}
+    description:
+      es: "Redes programables de extremo a extremo: separación de los planos de control y de datos, OpenFlow y controladores, emulación con Mininet, virtualización de redes y de funciones (NFV) y planos de datos programables con P4."
+      en: "Programmable networks end to end: control and data plane separation, OpenFlow and controllers, Mininet emulation, network and function virtualization (NFV) and programmable data planes with P4."
+    syllabus: "syllabi/future-internet-udea-2027-1.pdf"
+    classroom_url: ""
+    classroom_code: ""
+    pending: ""
+
+  - id: modelado-optimizacion-redes
+    block: posgrado
+    status: inactive
+    language: es
+    title: {es: "Modelado y Optimización de Redes", en: "Network Modeling and Optimization"}
+    program: {es: "Maestría en Ingeniería de Telecomunicaciones", en: "M.Sc. in Telecommunications Engineering"}
+    semesters: {es: "Anual, de 2013-2 a 2019-2", en: "Yearly, 2013-2 to 2019-2"}
+    description:
+      es: "Formulación de problemas de diseño, enrutamiento y asignación de recursos en redes de comunicaciones como modelos de programación lineal entera, con su análisis de complejidad y métodos de solución exactos y heurísticos."
+      en: "Formulating network design, routing and resource allocation problems as integer linear programs, with their complexity analysis and exact and heuristic solution methods."
+    syllabus: ""
+    classroom_url: ""
+    classroom_code: ""
+    pending: "Sin microcurrículo localizado."
+
+  - id: future-internet-antwerp
+    block: antwerp
+    status: active
+    language: en
+    title: {es: "Future Internet", en: "Future Internet"}
+    program: {es: "Programas de maestría · Department of Computer Science", en: "Master's programs · Department of Computer Science"}
+    semesters: {es: "Cada año académico desde 2021-2022", en: "Every academic year since 2021–2022"}
+    description:
+      es: "Paradigmas de arquitectura y retos abiertos de Internet: redes definidas por software, programabilidad del plano de datos con PISA y P4, y aprendizaje automático para la gestión de redes. Incluye laboratorios de programación con sustentación oral."
+      en: "Architectural paradigms and open challenges of the Internet: software-defined networking, data plane programmability with PISA and P4, and machine learning for network management. Includes programming labs with oral defense."
+    syllabus: ""
+    classroom_url: "https://classroom.google.com/c/ODg5Nzg5MzM5NTA2?cjc=ixj3l2my"
+    classroom_code: "ixj3l2my"
+    pending: "Programa en PDF: solo hay Course-Syllabus.pptx en Classroom."
+
+  - {id: esp-fundamentos, block: especializacion, status: upcoming, language: es, title: {es: "Fundamentos de Ciberseguridad y Criptografía", en: "Cybersecurity and Cryptography Fundamentals"}}
+  - {id: esp-redes, block: especializacion, status: upcoming, language: es, title: {es: "Seguridad en Redes y Telecomunicaciones", en: "Network and Telecommunications Security"}}
+  - {id: esp-grc, block: especializacion, status: upcoming, language: es, title: {es: "Gobierno, Riesgo y Cumplimiento", en: "Governance, Risk and Compliance"}}
+  - {id: esp-marcos, block: especializacion, status: upcoming, language: es, title: {es: "Marcos Estratégicos y Ética de la Ciberseguridad", en: "Strategic Frameworks and Ethics of Cybersecurity"}}
+  - {id: esp-hacking, block: especializacion, status: upcoming, language: es, title: {es: "Hacking Ético y Pruebas de Penetración", en: "Ethical Hacking and Penetration Testing"}}
+  - {id: esp-nube, block: especializacion, status: upcoming, language: es, title: {es: "Seguridad en la Nube", en: "Cloud Security"}}
+  - {id: esp-forense, block: especializacion, status: upcoming, language: es, title: {es: "Respuesta a Incidentes e Informática Forense", en: "Incident Response and Digital Forensics"}}
+  - {id: esp-ia, block: especializacion, status: upcoming, language: es, title: {es: "Inteligencia Artificial y Ciberseguridad", en: "Artificial Intelligence and Cybersecurity"}}
+  - {id: esp-monografia, block: especializacion, status: upcoming, language: es, title: {es: "Monografía", en: "Capstone Project"}}

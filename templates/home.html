@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block title %}{{ profile.name }} · {{ profile.position[lang] }}, Universidad de Antioquia{% endblock %}
+{% block main %}
+<section class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-text">
+      <p class="eyebrow">{{ profile.department[lang] }}</p>
+      <h1 class="display">{{ profile.name }}</h1>
+      <ul class="roles">
+        <li><strong>{{ profile.position[lang] }}</strong>, Universidad de Antioquia</li>
+        <li>Guest Professor, University of Antwerp</li>
+        <li>{{ profile.category[lang] }} · {{ 'Grupo' if lang == 'es' else 'Group' }} {{ profile.group.name }}</li>
+      </ul>
+      <p class="lede">{{ profile.tagline[lang] }}</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="{{ url('cv') }}">{{ t.cv_pdf }}</a>
+        <a class="btn" href="{{ profile.metrics.source_url }}" rel="noopener">{{ t.scholar }}</a>
+        <span class="email-chip"><span class="mono sel" id="email-addr">{{ profile.contact.email }}</span><button class="copy" type="button" data-copy="email-addr" data-done="{{ t.copied }}">{{ t.copy_btn }}</button></span>
+      </div>
+    </div>
+    <figure class="portrait">
+      <img src="{{ static('img/profile.jpg') }}" alt="{{ t.photo_alt }}" width="640" height="800">
+    </figure>
+  </div>
+</section>
+
+{% if profile.sabbatical %}
+<section class="notice-band" aria-label="{{ t.sabbatical }}">
+  <div class="wrap notice-in">
+    <span class="notice-label mono">{{ t.sabbatical }}</span>
+    <p>{{ profile.sabbatical[lang] }}</p>
+  </div>
+</section>
+{% endif %}
+
+<section class="metrics-band" aria-label="{{ 'Indicadores' if lang == 'es' else 'Indicators' }}">
+  <div class="wrap">
+    <dl class="metrics">
+      <div><dd>{{ profile.metrics.citations | thousands(lang) }}</dd><dt>{{ t.citations }}</dt></div>
+      <div><dd>{{ profile.metrics.h_index }}</dd><dt>{{ t.h_index }}</dt></div>
+      <div><dd>{{ profile.metrics.i10_index }}</dd><dt>{{ t.i10 }}</dt></div>
+      <div><dd>{{ profile.metrics.phd_supervised }}</dd><dt>{{ t.phd }}</dt></div>
+      <div><dd>{{ projects | length }}</dd><dt>{{ t.projects_n }}</dt></div>
+    </dl>
+    <p class="metrics-src mono"><a href="{{ profile.metrics.source_url }}" rel="noopener">{{ t.metrics_src.format(date=fmt_date(profile.metrics.as_of)) }}</a></p>
+  </div>
+</section>
+
+<section class="section" id="lineas">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="h2">{{ t.research_lines }}</h2>
+      <a class="more" href="{{ url('research') }}">{{ t.all_research }} <span aria-hidden="true">→</span></a>
+    </div>
+    {% include "_lines.html" %}
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="h2">{{ t.selected_pubs }}</h2>
+      <a class="more" href="{{ url('publications') }}">{{ t.all_pubs }} <span aria-hidden="true">→</span></a>
+    </div>
+    <ol class="pubs">
+      {% for p in featured %}{% include "_pub.html" %}{% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap news-grid">
+    <h2 class="h2">{{ t.news }}</h2>
+    <ul class="news">
+      {% for n in news %}
+      <li><span class="news-date mono">{{ n.date }}</span>
+        <p>{% if n.link %}<a href="{{ url(n.link) }}">{{ n[lang] }}</a>{% else %}{{ n[lang] }}{% endif %}</p></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section section-alt contact-band">
+  <div class="wrap news-grid">
+    <h2 class="h2">{{ t.contact }}</h2>
+    <dl class="contact">
+      <div><dt>{{ t.email }}</dt><dd><span class="mono sel">{{ profile.contact.email }}</span></dd></div>
+      <div><dt>{{ t.postal }}</dt><dd>{{ profile.contact.postal[lang] }}</dd></div>
+      <div class="contact-note"><dd>{{ profile.contact.note[lang] }}</dd></div>
+    </dl>
+  </div>
+</section>
+{% endblock %}

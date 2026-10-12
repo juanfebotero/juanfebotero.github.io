@@ -1,0 +1,19 @@
+# ------------------------------------------------------------
+# News shown on the home page (newest first). Keep 3 to 5 items.
+# date: YYYY-MM or YYYY. link: optional, relative page id or full URL.
+# ------------------------------------------------------------
+- date: "2026"
+  es: "Comienza una nueva edición del curso Future Internet en la University of Antwerp."
+  en: "A new edition of the Future Internet course begins at the University of Antwerp."
+  link: teaching
+- date: "2026"
+  es: "Conferencia principal (keynote) en IEEE ColCom 2026."
+  en: "Keynote talk at IEEE ColCom 2026."
+- date: "2026"
+  es: "Año sabático dedicado al diseño de la Especialización en Ciberseguridad de la Universidad de Antioquia, prevista para 2027."
+  en: "Sabbatical year devoted to designing the Specialization in Cybersecurity at Universidad de Antioquia, planned for 2027."
+  link: teaching
+- date: "2026"
+  es: "Publicamos en IEEE Communications Surveys & Tutorials una revisión sobre aprendizaje por refuerzo para la ingeniería de tráfico en redes programables."
+  en: "Our survey on reinforcement learning for traffic engineering in programmable networks appeared in IEEE Communications Surveys & Tutorials."
+  link: publications

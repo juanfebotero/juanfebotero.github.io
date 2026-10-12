@@ -1,0 +1,14 @@
+<div class="lines-grid">
+  <figure class="topo-fig">
+    {% include "_topology.html" %}
+    <figcaption>{{ t.topo_caption }}</figcaption>
+  </figure>
+  <ul class="lines" id="lines">
+    {% for l in research.lines %}
+    <li class="line" data-line="{{ l.id }}" tabindex="0">
+      <h3 class="h3">{% if page == 'research' %}<a href="#{{ l.id }}">{{ l[lang].title }}</a>{% else %}{{ l[lang].title }}{% endif %}</h3>
+      <p>{{ l[lang].text }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

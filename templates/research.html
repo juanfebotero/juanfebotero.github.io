@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}{{ t.nav_research }} · {{ profile.name }}{% endblock %}
+{% block description %}{{ t.research_intro }}{% endblock %}
+{% block main %}
+<section class="page-head">
+  <div class="wrap">
+    <h1 class="display display-sm">{{ t.nav_research }}</h1>
+    <p class="lede">{{ t.research_intro }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    {% include "_lines.html" %}
+  </div>
+</section>
+
+{% for l in research.lines %}
+<section class="section line-block {% if loop.index is odd %}section-alt{% endif %}" id="{{ l.id }}">
+  <div class="wrap line-block-in">
+    <div class="line-block-head">
+      <h2 class="h2">{{ l[lang].title }}</h2>
+      <p>{{ l[lang].text }}</p>
+      <p class="tags">{% for k in l.keywords %}<span class="tag">{{ k }}</span>{% endfor %}</p>
+    </div>
+    <div>
+      <h3 class="label-h">{{ t.recent_in_line }}</h3>
+      <ol class="pubs pubs-compact">
+        {% for p in (pubs | selectattr('topics', 'contains', line_topic[l.id]) | list)[:3] %}{% include "_pub.html" %}{% endfor %}
+      </ol>
+      <a class="more" href="{{ url('publications') }}#{{ l.id }}">{{ t.all_pubs }} <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+{% endfor %}
+
+<section class="section">
+  <div class="wrap news-grid">
+    <h2 class="h2">{{ t.group_title }}</h2>
+    <div class="prose">
+      <p>{{ t.group_text }}</p>
+      <h3 class="label-h">{{ t.partners }}</h3>
+      <ul class="partner-list">
+        <li>Universitat Politècnica de Catalunya</li><li>University of Antwerp – imec</li><li>Universidade Federal do Rio Grande do Sul</li>
+        <li>Tecnológico de Monterrey</li><li>Inria / LORIA</li><li>Universidad del País Vasco (UPV/EHU)</li>
+        <li>Mälardalen University</li><li>Universidad de Castilla-La Mancha</li>
+      </ul>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,36 @@
+# ------------------------------------------------------------
+# Academic service. Source: CV 2026 (LaTeX) and about-me.md.
+# ------------------------------------------------------------
+editorial:
+  - years: "2020–"
+    es: "Editor asociado, IEEE Transactions on Network and Service Management"
+    en: "Associate Editor, IEEE Transactions on Network and Service Management"
+  - years: "2019–"
+    es: "Editor asociado, Journal of Network and Systems Management (Springer)"
+    en: "Associate Editor, Journal of Network and Systems Management (Springer)"
+  - years: ""
+    es: "Editor invitado del número especial «Security in Next-Generation Communication Networks», Journal of Network and Systems Management"
+    en: "Guest Editor of the special issue “Security in Next-Generation Communication Networks”, Journal of Network and Systems Management"
+chairs:
+  - years: "2024"
+    es: "Copresidente del comité técnico de programa, IEEE LATINCOM 2024"
+    en: "TPC Co-Chair, IEEE LATINCOM 2024"
+  - years: "2024"
+    es: "Copresidente del comité técnico de programa, IEEE ANDESCON 2024"
+    en: "TPC Co-Chair, IEEE ANDESCON 2024"
+  - years: "2022"
+    es: "Copresidente del comité técnico de programa, AnNet 2022 (IEEE/IFIP NOMS)"
+    en: "TPC Co-Chair, AnNet 2022 (IEEE/IFIP NOMS)"
+  - years: "2018"
+    es: "Copresidente del comité técnico de programa, IEEE ColCom 2018"
+    en: "TPC Co-Chair, IEEE ColCom 2018"
+talks:
+  - years: "2026"
+    es: "Conferencia principal (keynote), IEEE ColCom 2026"
+    en: "Keynote, IEEE ColCom 2026"
+  - years: "2015–2024"
+    es: "Tutoriales en IEEE ColCom 2015, IEEE LATINCOM 2022 e IEEE/IFIP NOMS 2023 y 2024"
+    en: "Tutorials at IEEE ColCom 2015, IEEE LATINCOM 2022 and IEEE/IFIP NOMS 2023 and 2024"
+committees:
+  es: "Miembro del comité técnico de programa de IEEE CNSM (2020 a 2024) e IEEE LATINCOM (2022 a 2024), y revisor de revistas como IEEE JSAC, IEEE Communications Magazine, IEEE Network, Computer Networks y JNCA."
+  en: "Technical program committee member of IEEE CNSM (2020 to 2024) and IEEE LATINCOM (2022 to 2024), and reviewer for journals such as IEEE JSAC, IEEE Communications Magazine, IEEE Network, Computer Networks and JNCA."
