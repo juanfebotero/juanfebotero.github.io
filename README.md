@@ -23,19 +23,31 @@ publicar.sh           crea el repositorio y publica (primera vez) o publica los 
 
 ## 1. Publicar en GitHub Pages
 
+Estado: publicado el 12 de octubre de 2026 en https://juanfebotero.github.io (repositorio `juanfebotero/juanfebotero.github.io`).
+
 La carpeta del proyecto es `MyDigitalTwin/Projects/website` en Google Drive; en el portátil, `~/Desktop/GoogleDrive/MyDigitalTwin/Projects/website`.
 
 Primera vez (unos 10 minutos):
 
+1. Instalar GitHub CLI desde su repositorio oficial (no está en los repositorios de todas las versiones de Ubuntu). Instrucciones: https://github.com/cli/cli/blob/trunk/docs/install_linux.md. Al final, `gh --version` debe mostrar la versión. Si `apt update` falla por otro repositorio roto, desactive ese archivo en `/etc/apt/sources.list.d/` (renombrándolo a `.disabled`).
+2. Vista previa local (opcional), con un entorno virtual fuera de Drive:
+
 ```bash
-sudo apt update && sudo apt install -y git gh python3-pip   # herramientas, solo la primera vez
+sudo apt install -y python3-venv
+python3 -m venv ~/.venvs/website
+~/.venvs/website/bin/pip install -r requirements.txt
 cd ~/Desktop/GoogleDrive/MyDigitalTwin/Projects/website
-pip install -r requirements.txt                             # opcional: vista previa local
-python3 build.py --serve                                    # opcional: http://localhost:8000 (Ctrl+C para salir)
-bash publicar.sh                                            # crea el repositorio y publica
+~/.venvs/website/bin/python build.py --serve     # http://localhost:8000 (Ctrl+C para salir)
 ```
 
-`publicar.sh` abre el navegador para que usted inicie sesión en GitHub con la cuenta `juanfebotero` y autorice a GitHub CLI. Luego crea el repositorio público `juanfebotero.github.io`, sube los archivos y activa GitHub Pages con GitHub Actions. El sitio queda en `https://juanfebotero.github.io` cuando el flujo «Publicar sitio» aparece en verde en `https://github.com/juanfebotero/juanfebotero.github.io/actions` (uno o dos minutos).
+3. Publicar:
+
+```bash
+cd ~/Desktop/GoogleDrive/MyDigitalTwin/Projects/website
+bash publicar.sh
+```
+
+`publicar.sh` muestra un código de un solo uso y abre https://github.com/login/device: se inicia sesión con la cuenta `juanfebotero`, se escribe el código y se autoriza a GitHub CLI. Luego crea el repositorio público `juanfebotero.github.io`, sube los archivos y activa GitHub Pages con GitHub Actions. El sitio queda en `https://juanfebotero.github.io` cuando el flujo «Publicar sitio» aparece en verde en `https://github.com/juanfebotero/juanfebotero.github.io/actions` (uno o dos minutos).
 
 Cambios posteriores: edite los archivos de `content/` y ejecute `bash publicar.sh "qué cambió"`.
 

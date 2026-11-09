@@ -2,6 +2,10 @@
 # News shown on the home page (newest first). Keep 3 to 5 items.
 # date: YYYY-MM or YYYY. link: optional, relative page id or full URL.
 # ------------------------------------------------------------
+- date: "2026-10"
+  es: "Comenzó el proyecto Erasmus+ QC3AI-LA, que desarrolla capacidades en computación cuántica para la ciberseguridad y la inteligencia artificial en América Latina."
+  en: "The Erasmus+ project QC3AI-LA has started. It develops quantum computing capabilities for cybersecurity and artificial intelligence in Latin America."
+  link: projects
 - date: "2026"
   es: "Comienza una nueva edición del curso Future Internet en la University of Antwerp."
   en: "A new edition of the Future Internet course begins at the University of Antwerp."
